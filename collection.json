@@ -38,7 +38,7 @@
     "notes": "Associated with IEEE IECON 2026, Doha, Qatar, 18–21 October 2026. Author preprint, arXiv:2607.24633v3; the DOI identifies the arXiv preprint, not an IEEE proceedings record."
   },
   "prepared_date": "2026-10-06",
-  "public_url": null,
+  "public_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/",
   "latest_release": "1.0.0",
   "resources": [
     {
@@ -171,6 +171,9 @@
   "hosting": {
     "provider": "GitHub Pages",
     "publishing_source": "main branch, repository root",
-    "configured_on_github": false
-  }
+    "configured_on_github": true
+  },
+  "repository_url": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf",
+  "publication_date": "2026-10-07",
+  "online_viewer_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/"
 }

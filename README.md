@@ -1,14 +1,18 @@
 # IEEE IECON 2026 supplementary collections
 
-Prepared locally on 6 October 2026. This website has not been published and has no public collection URL or archive DOI assigned.
+[**Run the interactive viewer online — no download required**](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/)
+
+[Paper and supplementary collection](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/) · [GitHub repository](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf) · [Download the offline package](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/downloads/IECON2026_OPF_Supplementary_v1.0.0.zip)
+
+Prepared on 6 October 2026 and published on GitHub Pages on 7 October 2026. The resource accompanies the IEEE IECON 2026 open-phase-fault paper **[25]**. A separate archive DOI has not yet been assigned.
 
 ## Run the viewer online
 
-Once this collection is published with GitHub Pages, readers can open the public viewer link or select **Run interactive viewer** on the OPF homepage. The viewer runs directly in the browser; downloading or extracting a ZIP is optional. Its short online entry is **viewer/**, which automatically opens the version 1.0.0 HTML. The paper [25] remains identified in the viewer and collection.
+Readers can open the direct viewer link above or select **Run interactive viewer** on the OPF homepage. The viewer runs directly in the browser; downloading or extracting a ZIP is optional. Its short online entry is **viewer/**, which automatically opens the version 1.0.0 HTML. The paper [25] remains identified in the viewer and collection.
 
-The direct viewer link should be featured at the top of the GitHub repository README and in its About website field. The public URLs are not assigned yet; the prepared publication drafts contain clearly marked placeholders for them.
+The direct viewer link is featured at the top of this README and in the repository About website field. Readers need no GitHub account or MATLAB installation to use the online viewer.
 
-For the one-time publishing settings, see [GITHUB_PAGES_SETUP.txt](GITHUB_PAGES_SETUP.txt). The empty **.nojekyll** marker prepares the existing files for static GitHub Pages hosting.
+For the current hosting settings and maintenance instructions, see [GITHUB_PAGES_SETUP.txt](GITHUB_PAGES_SETUP.txt). The empty **.nojekyll** marker prepares the existing files for static GitHub Pages hosting.
 
 ## Open a local copy
 
@@ -41,7 +45,7 @@ These DOIs identify the author preprints, not the website, release package or IE
 - **lut-reduction/** — the separate homepage, citation and resource list for [26].
 - **LICENSE.txt**, **VALIDATION.md**, **manifest.json** and **SHA256SUMS.txt** — licence, verification and integrity information for this website distribution.
 
-All website links use relative paths for included files, so the same folder structure can be used locally or on a static web host. No account, build process or server application is required. No public repository, archive or social-media record has been created by preparing these pages.
+All website links use relative paths for included files, so the same folder structure can be used locally or on a static web host. No account, build process or server application is required. The GitHub repository and Pages site are public. Archiving and social-media announcements are separate publication steps.
 
 ## Interpreting the viewer
 

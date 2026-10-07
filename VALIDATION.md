@@ -54,3 +54,13 @@ The collection now features **Run interactive viewer** as its primary action. Th
 - All included release files and the OPF package archive remained byte-identical. Local links, paper association, manifests, checksums and the rebuilt website archive were verified again.
 
 These checks establish the prepared local hosting arrangement. No GitHub repository or Pages configuration was changed, and no public deployment was performed. The final public homepage and direct viewer URL must be verified after publication. Scientific calculations and their documented limitations are unchanged.
+
+## GitHub Pages publication — 7 October 2026
+
+The collection is published at [https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/), with the direct viewer at [https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/). The repository is [agyepes/iecon2026-six-phase-pmsm-opf](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf). Its publishing source is the **main** branch at the repository root, with HTTPS enabled.
+
+The initial public deployment was checked against all 24 repository files. Served files matched their on-disk bytes; the .nojekyll hosting marker was checked through the repository API. The public OPF ZIP was downloaded and reopened independently, and its CRC, manifest and SHA-256 checksums matched the reviewed package.
+
+In headless **Chrome/155.0.8059.39**, the homepage button and short viewer address opened the correct versioned HTML and completed the five-method operating-point calculation and loss sweep. An operating-point change produced a new result. Independent method visibility, the harmonic percentage view, JSON and CSV exports, and offline calculations from the downloaded ZIP were exercised successfully. The public homepage and viewer were checked at desktop and phone widths in light and dark mode, and their screenshots were visually inspected.
+
+The nine-file OPF package and scientific viewer are unchanged. This publication verification adds hosting, navigation and distribution checks; it does not change the scientific scope documented in the release README.

@@ -42,7 +42,7 @@
     "notes": "Associated with IEEE IECON 2026, Doha, Qatar, 18–21 October 2026. Author preprint, arXiv:2607.24395v3; the DOI identifies the arXiv preprint, not an IEEE proceedings record."
   },
   "prepared_date": "2026-10-06",
-  "public_url": null,
+  "public_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/lut-reduction/",
   "latest_release": null,
   "resources": [
     {
@@ -82,5 +82,7 @@
     "paper": "10.48550/arXiv.2607.24633",
     "path": "../index.html"
   },
-  "last_updated": "2026-10-07"
+  "last_updated": "2026-10-07",
+  "repository_url": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf",
+  "publication_date": "2026-10-07"
 }

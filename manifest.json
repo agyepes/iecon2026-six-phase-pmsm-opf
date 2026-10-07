@@ -3,7 +3,7 @@
   "distribution_id": "iecon2026-supplementary-collections",
   "distribution_version": "1.0.0",
   "prepared_date": "2026-10-06",
-  "publicly_published": false,
+  "publicly_published": true,
   "primary_collection": "index.html",
   "primary_paper_preprint_doi": "10.48550/arXiv.2607.24633",
   "separate_collection": "lut-reduction/index.html",
@@ -19,8 +19,8 @@
     },
     {
       "path": "collection.json",
-      "bytes": 5218,
-      "sha256": "3592696655d0f77418b910b40bb8a527f191733a89002d4bf03bb513a1de4925"
+      "bytes": 5474,
+      "sha256": "0c8e5d9394cac4969c4b3c18c7198a7b40316a420f9a08cc65f021f02de5506b"
     },
     {
       "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip",
@@ -34,13 +34,13 @@
     },
     {
       "path": "GITHUB_PAGES_SETUP.txt",
-      "bytes": 1928,
-      "sha256": "ce2ac507ce4cfb9ae9833b82ec2fb636acf346a738348d15b3368b31907880a4"
+      "bytes": 1546,
+      "sha256": "1f653d2014c597725b9489659819f36dac48fdce346bfbc34f465f200dbd3ff2"
     },
     {
       "path": "index.html",
-      "bytes": 18632,
-      "sha256": "bbdf4a00a62785148bd3337cfc91721fc6a8c20d9a10c76b600f6d6ab744397b"
+      "bytes": 18736,
+      "sha256": "f7d3673cc8106586f2c76da8f29138b3a8b98193681f740364879b92f2019dbf"
     },
     {
       "path": "LICENSE.txt",
@@ -54,18 +54,18 @@
     },
     {
       "path": "lut-reduction/collection.json",
-      "bytes": 2469,
-      "sha256": "b85104875e705c79fd37d12eefae3e9f9fa73fcc3e446a1727c2d4c3169cfb62"
+      "bytes": 2651,
+      "sha256": "a546569316b3de2276c09bd42e6818c1df7ef1538a5e80b739edf9aa2144884d"
     },
     {
       "path": "lut-reduction/index.html",
-      "bytes": 14436,
-      "sha256": "3607ffbcc2044bfcaca5766a7571e0b488bc07f73aa7f3c80835a41a121601d7"
+      "bytes": 14540,
+      "sha256": "bc56f6bf2072eb20bb53aa0a7c1d2db5e43145f3dc003d0abe595a6de68350f4"
     },
     {
       "path": "README.md",
-      "bytes": 6281,
-      "sha256": "bdfd110689cccc20d004637200bb857b87b3b737e08cbad6d21a96896d7d0730"
+      "bytes": 6754,
+      "sha256": "2a955b8df6db03fc1705de385da927d74a91b125baa95d29fb3d31381e18ede8"
     },
     {
       "path": "releases/v1.0.0/CHANGELOG.md",
@@ -114,8 +114,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 6756,
-      "sha256": "fe20a2c91c2f63adfc83319a65139c6283635950c2b48c7dfc3fe6654de29632"
+      "bytes": 8398,
+      "sha256": "3f21a131624639aafe93e7741ff38af17ec926a3c825273af5f22f8c4c1adfff"
     },
     {
       "path": "viewer/index.html",
@@ -126,5 +126,9 @@
   "last_updated": "2026-10-07",
   "online_viewer_entry": "viewer/",
   "hosting_prepared_for": "GitHub Pages static branch deployment",
-  "github_pages_configured": false
+  "github_pages_configured": true,
+  "repository_url": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf",
+  "public_collection_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/",
+  "public_viewer_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/",
+  "publication_date": "2026-10-07"
 }
