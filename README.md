@@ -4,7 +4,18 @@
 
 [Paper and supplementary collection](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/) · [GitHub repository](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf) · [Download the offline package](downloads/IECON2026_OPF_Supplementary_v1.0.1.zip)
 
-**Version 1.0.1 · 7 October 2026.** The resource accompanies the IEEE IECON 2026 open-phase-fault paper **[25]**. The online viewer and offline download use this release. [Earlier release v1.0.0](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/v1.0.0) remains available. A separate archive DOI has not yet been assigned.
+**Version 1.0.1 · 7 October 2026.** The resource accompanies the IEEE IECON 2026 open-phase-fault paper **[25]**. The online viewer and offline download use this release. [Earlier release v1.0.0](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/v1.0.0) remains available. The matching package is archived on [Zenodo](https://zenodo.org/records/23222573).
+
+## Zenodo archive and citation
+
+| Identifier | Use |
+| --- | --- |
+| [Version 1.0.1 DOI](https://doi.org/10.5281/zenodo.23222573) | Cite the exact supplementary package used for reproducible results. |
+| [All-versions DOI](https://doi.org/10.5281/zenodo.23222572) | Cite the evolving supplementary resource; this resolves to its latest version. |
+
+Version 1.0.1: **10.5281/zenodo.23222573**. All versions: **10.5281/zenodo.23222572**.
+
+The [Zenodo record](https://zenodo.org/records/23222573) contains the same version 1.0.1 package ZIP and checksum as the GitHub release. Cite the associated **IEEE IECON 2026 OPF paper [25]** alongside the package: Alejandro G. Yepes (2026), *IEEE IECON 2026 open-phase-fault paper: interactive current-reference viewer*, version 1.0.1, Zenodo, https://doi.org/10.5281/zenodo.23222573.
 
 ## Run the viewer online
 

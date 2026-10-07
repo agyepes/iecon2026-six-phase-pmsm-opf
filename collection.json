@@ -179,5 +179,16 @@
   "latest_release_publicly_published": true,
   "published_release": "1.0.1",
   "acknowledgment": "This interactive HTML viewer was created with the help of ChatGPT (OpenAI).",
-  "previous_published_release": "1.0.0"
+  "previous_published_release": "1.0.0",
+  "archive": {
+    "platform": "Zenodo",
+    "status": "published",
+    "version": "1.0.1",
+    "record_id": "23222573",
+    "record_url": "https://zenodo.org/records/23222573",
+    "version_doi": "10.5281/zenodo.23222573",
+    "concept_doi": "10.5281/zenodo.23222572",
+    "package_sha256": "d800a23ec8046d7b4d943ea874fd6cbd25df88e06ebae9ac74c0a05763f02448",
+    "published_date": "2026-10-07"
+  }
 }
