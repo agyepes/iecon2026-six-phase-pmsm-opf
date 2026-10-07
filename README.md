@@ -15,7 +15,7 @@
 
 Version 1.0.1: **10.5281/zenodo.23222573**. All versions: **10.5281/zenodo.23222572**.
 
-The [Zenodo record](https://zenodo.org/records/23222573) contains the same version 1.0.1 package ZIP and checksum as the GitHub release. Cite the associated **IEEE IECON 2026 OPF paper [25]** alongside the package: Alejandro G. Yepes (2026), *IEEE IECON 2026 open-phase-fault paper: interactive current-reference viewer*, version 1.0.1, Zenodo, https://doi.org/10.5281/zenodo.23222573.
+The [Zenodo record](https://zenodo.org/records/23222573) contains the same version 1.0.1 package ZIP and checksum as the GitHub release. Cite the associated **IEEE IECON 2026 OPF paper [25]** alongside the package: Alejandro G. Yepes (2026), *Supplementary interactive HTML file for the IECON 2026 paper "Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault"*, version 1.0.1, Zenodo, https://doi.org/10.5281/zenodo.23222573.
 
 ## Run the viewer online
 
