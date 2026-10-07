@@ -2,13 +2,13 @@
 
 [**Run the interactive viewer online — no download required**](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/)
 
-[Paper and supplementary collection](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/) · [GitHub repository](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf) · [Download the offline package](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/downloads/IECON2026_OPF_Supplementary_v1.0.0.zip)
+[Paper and supplementary collection](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/) · [GitHub repository](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf) · [Download the offline package](downloads/IECON2026_OPF_Supplementary_v1.0.1.zip)
 
-Prepared on 6 October 2026 and published on GitHub Pages on 7 October 2026. The resource accompanies the IEEE IECON 2026 open-phase-fault paper **[25]**. A separate archive DOI has not yet been assigned.
+**Version 1.0.1 · 7 October 2026.** The resource accompanies the IEEE IECON 2026 open-phase-fault paper **[25]**. The online viewer and offline download use this release. [Earlier release v1.0.0](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/v1.0.0) remains available. A separate archive DOI has not yet been assigned.
 
 ## Run the viewer online
 
-Readers can open the direct viewer link above or select **Run interactive viewer** on the OPF homepage. The viewer runs directly in the browser; downloading or extracting a ZIP is optional. Its short online entry is **viewer/**, which automatically opens the version 1.0.0 HTML. The paper [25] remains identified in the viewer and collection.
+Readers can open the direct viewer link above or select **Run interactive viewer** on the OPF homepage. The viewer runs directly in the browser; downloading or extracting a ZIP is optional. Its short online entry is **viewer/**, which automatically opens the selected versioned HTML. It opens the version 1.0.1 HTML online or from this local folder. The paper [25] remains identified in the viewer and collection.
 
 The direct viewer link is featured at the top of this README and in the repository About website field. Readers need no GitHub account or MATLAB installation to use the online viewer.
 
@@ -40,8 +40,8 @@ These DOIs identify the author preprints, not the website, release package or IE
 - **viewer/index.html** — short entry that automatically opens the selected versioned viewer.
 - **.nojekyll** and **GITHUB_PAGES_SETUP.txt** — static-hosting marker and one-time publisher instructions.
 - **collection.json** — OPF paper metadata and resource list, with available files distinguished from reserved categories.
-- **releases/v1.0.0/** — the exact nine files from the completed OPF supplementary release, including the viewer, README, citations, licence, change log, validation record and checksums.
-- **downloads/** — the unchanged OPF version 1.0.0 package ZIP and its SHA-256 checksum.
+- **releases/v1.0.1/** — the exact nine files from the completed OPF supplementary release, including the viewer, README, citations, licence, change log, validation record and checksums.
+- **downloads/** — the revised OPF version 1.0.1 package ZIP and its SHA-256 checksum.
 - **lut-reduction/** — the separate homepage, citation and resource list for [26].
 - **LICENSE.txt**, **VALIDATION.md**, **manifest.json** and **SHA256SUMS.txt** — licence, verification and integrity information for this website distribution.
 
@@ -49,7 +49,7 @@ All website links use relative paths for included files, so the same folder stru
 
 ## Interpreting the viewer
 
-The existing version 1.0.0 viewer is included without modification. Its numerical limitations, mean-torque adjustment for NSBE-FRML, sampling assumptions, compact-LUT interpolation and feasibility criteria remain as documented in [its README](releases/v1.0.0/README.md). Preparing this website does not resolve or change those calculations.
+The version 1.0.1 viewer keeps the calculation scripts and embedded data of published version 1.0.0. This revision adds an acknowledgment and updates the README. Its comparison criteria and opening instructions are in [the viewer guide](releases/v1.0.1/README.md); the model and detailed constraint checks are available in the HTML.
 
 ## Add resources later
 
@@ -60,6 +60,10 @@ The existing version 1.0.0 viewer is included without modification. Its numerica
 5. Check local links, file hashes, paper metadata, offline use and the layouts again. Rebuild the website checksum list and archive after any change.
 6. Once public hosting and archiving are completed, add the verified public URLs and archive identifiers to the relevant homepage, documentation and collection metadata. Do not replace a paper DOI with a package DOI.
 
+## Acknowledgment
+
+This interactive HTML viewer was created with the help of ChatGPT (OpenAI).
+
 ## Licence
 
-The original collection pages and their accompanying documentation are offered under CC BY 4.0; see [LICENSE.txt](LICENSE.txt). The included release retains its own [licence notice](releases/v1.0.0/LICENSE.txt). Linked research publications retain their own reuse terms.
+The original collection pages and their accompanying documentation are offered under CC BY 4.0; see [LICENSE.txt](LICENSE.txt). The included release retains its own [licence notice](releases/v1.0.1/LICENSE.txt). Linked research publications retain their own reuse terms.

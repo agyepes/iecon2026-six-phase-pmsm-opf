@@ -1,0 +1,79 @@
+{
+  "schema_version": "1.0",
+  "package_title": "Interactive supplementary material for the IEEE IECON 2026 open-phase-fault paper",
+  "package_version": "1.0.1",
+  "prepared_date": "2026-10-07",
+  "license": "CC-BY-4.0",
+  "viewer_file": "IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+  "html_internal_model_version": "1.4-nsbe-mean-matched-290v-boundaries",
+  "primary_paper": {
+    "viewer_reference_number": 25,
+    "title": "Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault",
+    "author_preprint_doi": "10.48550/arXiv.2607.24633",
+    "author_preprint_url": "https://arxiv.org/abs/2607.24633v3",
+    "association": "Primary IEEE IECON 2026 open-phase-fault paper"
+  },
+  "supporting_paper": {
+    "viewer_reference_number": 26,
+    "title": "Optimization of Current Lookup Tables for Minimum Stator Copper Loss and Torque Ripple in the Full Torque-Speed Range for a Six-Phase PMSM With Nonsinusoidal Back-EMF",
+    "author_preprint_doi": "10.48550/arXiv.2607.24395",
+    "author_preprint_url": "https://arxiv.org/abs/2607.24395v3",
+    "role": "LUT-reduction approach evaluated only through the compact-LUT implementation adapted to the OPF data of [25]"
+  },
+  "html_provenance": {
+    "before_glossary_edit_sha256": "dd8634eb3bf95af7fa2f2be66aef86a73b1a08952f5d1a87322af641846772e4",
+    "packaged_html_sha256": "3be9238b05c78287bb5d3165a08fa6ef7ea4e1594990996d6c923a9d32d736e5",
+    "presentation_change": "Version 1.0.1 adds a visible ChatGPT assistance acknowledgment; all other viewer bytes match published version 1.0.0.",
+    "calculation_scripts_and_embedded_data_unchanged": true,
+    "before_ieee_venue_wording_sha256": "c8400877654d51c73e783690822287ddece2f8ca12730130d65b0cbf14faaa0f",
+    "previous_published_version": "1.0.0",
+    "previous_published_html_sha256": "ae91320aa33f502f7baf23d317fd1a4704400e045c18b5e5f292caf49f27b6b9",
+    "script_block_sha256": [
+      "630702e3607cb429edfa799c995e68e91f3ff21031ee15d183a6dd90d76f5d0e",
+      "f76b218e9176f288abd747cff7e8d452292bd5ebbe670f3371ef0b236a922c60",
+      "cb259bdd4d2b449b80c8b7e494df3d2ec45141629163c346caf0365c6dea3801",
+      "df46e34188370cce9f89e78e66d9663b274cbde8188dda06c7831ee712db3a4d"
+    ]
+  },
+  "checksum_scope": "The files array covers all payload files. SHA256SUMS.txt additionally covers manifest.json. Neither checksum file includes its own checksum.",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 2458,
+      "sha256": "bf8f8f8f83810ca13fc0234d10ef0bc6d24755592bcfad3de0a7cc56a7c35933"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 3022,
+      "sha256": "f294391556d45b406761ade2f6bc168bb42c9b8d24ce04012588e136c5db844d"
+    },
+    {
+      "path": "CITATION.md",
+      "bytes": 2696,
+      "sha256": "8f6ab2823ab10b46864f6fa6bf6c37b7f9df6b8b91e3998459281dea07543b25"
+    },
+    {
+      "path": "IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+      "bytes": 985019,
+      "sha256": "3be9238b05c78287bb5d3165a08fa6ef7ea4e1594990996d6c923a9d32d736e5"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1552,
+      "sha256": "46f75a6485648fb62bb50867c646a76c75831d914f46a131c55bbc2cc3ceab9e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 8590,
+      "sha256": "ce71635c4b1ebdd6b5aa840faac5f8b0065d87a4ff3a5f01f61c5e0206da21e3"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 2404,
+      "sha256": "ce9980875dcf45470da475538dc2cf94d476526b9627358db4dd2b16816ccdee"
+    }
+  ],
+  "last_updated": "2026-10-07",
+  "acknowledgment": "This interactive HTML viewer was created with the help of ChatGPT (OpenAI).",
+  "prepared_before_publication": true
+}

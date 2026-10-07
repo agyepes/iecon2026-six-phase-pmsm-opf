@@ -1,6 +1,6 @@
 # Website validation record
 
-Prepared and checked on 6 October 2026. This record concerns the two collection homepages and their distribution. The unchanged viewer has its own [version 1.0.0 validation record](releases/v1.0.0/VALIDATION.md).
+Prepared and checked on 6 October 2026. This record concerns the two collection homepages and their distribution. The unchanged viewer has its own [version 1.0.0 validation record](https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/releases/v1.0.0/VALIDATION.md).
 
 ## Content and association
 
@@ -64,3 +64,11 @@ The initial public deployment was checked against all 24 repository files. Serve
 In headless **Chrome/155.0.8059.39**, the homepage button and short viewer address opened the correct versioned HTML and completed the five-method operating-point calculation and loss sweep. An operating-point change produced a new result. Independent method visibility, the harmonic percentage view, JSON and CSV exports, and offline calculations from the downloaded ZIP were exercised successfully. The public homepage and viewer were checked at desktop and phone widths in light and dark mode, and their screenshots were visually inspected.
 
 The nine-file OPF package and scientific viewer are unchanged. This publication verification adds hosting, navigation and distribution checks; it does not change the scientific scope documented in the release README.
+
+## Local revision 1.0.1 — 7 October 2026
+
+The new revision adds the ChatGPT assistance acknowledgment to the viewer, OPF homepage and READMEs. The entire “Limitations that matter” section was removed from the revised release README. The public version 1.0.0 and its local mirror were preserved; the new revision has not been published.
+
+The local homepage, viewer entry, guide and downloads now resolve to version 1.0.1. Included viewer SHA-256: `3be9238b05c78287bb5d3165a08fa6ef7ea4e1594990996d6c923a9d32d736e5`. OPF ZIP SHA-256: `92ea6a4f0a3b82fdc8154f92d20d01c20ba66632e14506ac6c72ad28c42d9c75`. All viewer scripts and embedded data match version 1.0.0 byte for byte. All local HTML and Markdown links, unique HTML IDs, manifests, checksums and both new archives were checked. The archives contain only the 24 website files or the nine release files listed in their manifests.
+
+Earlier browser and hosting checks above describe their stated earlier versions. They were not repeated for this acknowledgment and documentation revision.

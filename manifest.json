@@ -1,16 +1,16 @@
 {
   "schema_version": "1.0",
   "distribution_id": "iecon2026-supplementary-collections",
-  "distribution_version": "1.0.0",
-  "prepared_date": "2026-10-06",
+  "distribution_version": "1.0.1",
+  "prepared_date": "2026-10-07",
   "publicly_published": true,
   "primary_collection": "index.html",
   "primary_paper_preprint_doi": "10.48550/arXiv.2607.24633",
   "separate_collection": "lut-reduction/index.html",
   "separate_paper_preprint_doi": "10.48550/arXiv.2607.24395",
-  "included_opf_release": "1.0.0",
+  "included_opf_release": "1.0.1",
   "website_licence": "CC-BY-4.0",
-  "integrity_note": "This manifest excludes itself and SHA256SUMS.txt; the checksum list covers this manifest and all other files except the list itself.",
+  "integrity_note": "This manifest covers the current version 1.0.1 website distribution. It excludes itself and the root SHA256SUMS.txt; that checksum list additionally covers this manifest. Earlier versions retained in the repository have their own release manifests and are outside this distribution.",
   "files": [
     {
       "path": ".nojekyll",
@@ -19,18 +19,18 @@
     },
     {
       "path": "collection.json",
-      "bytes": 5474,
-      "sha256": "0c8e5d9394cac4969c4b3c18c7198a7b40316a420f9a08cc65f021f02de5506b"
+      "bytes": 5691,
+      "sha256": "7a24c6009df59064881a76282472cb761c385d0c43bff5b58706f26fcf50a267"
     },
     {
-      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip",
-      "bytes": 635185,
-      "sha256": "ce2e6c6ab5274b48e8a9826eac1d9589de6846a93aeb9e26831bd2bd6ffd0368"
+      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.1.zip",
+      "bytes": 633863,
+      "sha256": "d800a23ec8046d7b4d943ea874fd6cbd25df88e06ebae9ac74c0a05763f02448"
     },
     {
-      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip.sha256",
+      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.1.zip.sha256",
       "bytes": 105,
-      "sha256": "7b3474e565aec4b1b39f98a54df77e376c9f332d37a67fcabf826020e20137c4"
+      "sha256": "e4daf729151e1073938414291512ae858d088187fe77f72a54059d46803c93ee"
     },
     {
       "path": "GITHUB_PAGES_SETUP.txt",
@@ -39,8 +39,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 18736,
-      "sha256": "f7d3673cc8106586f2c76da8f29138b3a8b98193681f740364879b92f2019dbf"
+      "bytes": 18851,
+      "sha256": "f7e1d4acfe36d6b66db3f3b3a277ea88b096cad8bb96539abc2c11133b0e8721"
     },
     {
       "path": "LICENSE.txt",
@@ -64,63 +64,63 @@
     },
     {
       "path": "README.md",
-      "bytes": 6754,
-      "sha256": "2a955b8df6db03fc1705de385da927d74a91b125baa95d29fb3d31381e18ede8"
+      "bytes": 6995,
+      "sha256": "7be8c0171c61dcfc914c37d22b92c4cc307fc112e62c0d4c1a0180839cd9e57d"
     },
     {
-      "path": "releases/v1.0.0/CHANGELOG.md",
-      "bytes": 1889,
-      "sha256": "080d4c00567746ac6e6560663fee2d6d209d7113ef14f20a88877982c794bb21"
+      "path": "releases/v1.0.1/CHANGELOG.md",
+      "bytes": 2458,
+      "sha256": "bf8f8f8f83810ca13fc0234d10ef0bc6d24755592bcfad3de0a7cc56a7c35933"
     },
     {
-      "path": "releases/v1.0.0/CITATION.cff",
+      "path": "releases/v1.0.1/CITATION.cff",
       "bytes": 3022,
-      "sha256": "590023e2d45a138cc3cebdfeb00366466a28732a6e421d8f40d9006a0508d3e6"
+      "sha256": "f294391556d45b406761ade2f6bc168bb42c9b8d24ce04012588e136c5db844d"
     },
     {
-      "path": "releases/v1.0.0/CITATION.md",
+      "path": "releases/v1.0.1/CITATION.md",
       "bytes": 2696,
-      "sha256": "64d9ea955838c1a191c7bdd2a593dadf6b10dbd027642f4255fc581c0cdeb26b"
+      "sha256": "8f6ab2823ab10b46864f6fa6bf6c37b7f9df6b8b91e3998459281dea07543b25"
     },
     {
-      "path": "releases/v1.0.0/IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
-      "bytes": 984880,
-      "sha256": "ae91320aa33f502f7baf23d317fd1a4704400e045c18b5e5f292caf49f27b6b9"
+      "path": "releases/v1.0.1/IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+      "bytes": 985019,
+      "sha256": "3be9238b05c78287bb5d3165a08fa6ef7ea4e1594990996d6c923a9d32d736e5"
     },
     {
-      "path": "releases/v1.0.0/LICENSE.txt",
+      "path": "releases/v1.0.1/LICENSE.txt",
       "bytes": 1552,
       "sha256": "46f75a6485648fb62bb50867c646a76c75831d914f46a131c55bbc2cc3ceab9e"
     },
     {
-      "path": "releases/v1.0.0/manifest.json",
-      "bytes": 3262,
-      "sha256": "4c282360f9c06e2df2cbb8a258709de201ce9c923b0ea417e0e0bf67f3476eb8"
+      "path": "releases/v1.0.1/manifest.json",
+      "bytes": 3764,
+      "sha256": "94ab70a211af6ee72edeed93cba0a5a86092787edfcefef32d54b46540065cec"
     },
     {
-      "path": "releases/v1.0.0/README.md",
-      "bytes": 10852,
-      "sha256": "868279bac5cc28eef239eb59aeaa2849717f101bf6d24975aa356c0cac4eda9f"
+      "path": "releases/v1.0.1/README.md",
+      "bytes": 8590,
+      "sha256": "ce71635c4b1ebdd6b5aa840faac5f8b0065d87a4ff3a5f01f61c5e0206da21e3"
     },
     {
-      "path": "releases/v1.0.0/SHA256SUMS.txt",
+      "path": "releases/v1.0.1/SHA256SUMS.txt",
       "bytes": 678,
-      "sha256": "f98413f6441b033e7b9553600933ab294e6b895460b45a81ea384648de17eabe"
+      "sha256": "0dca532739afb37b5ec5721344a49f66ec7dc4142f1534e7391f0c7d7fd94b29"
     },
     {
-      "path": "releases/v1.0.0/VALIDATION.md",
-      "bytes": 4563,
-      "sha256": "14f6db3174ba50b4cc10b5e9e797bad68bc3875d5b9708078fb98bdf3b426d01"
+      "path": "releases/v1.0.1/VALIDATION.md",
+      "bytes": 2404,
+      "sha256": "ce9980875dcf45470da475538dc2cf94d476526b9627358db4dd2b16816ccdee"
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 8398,
-      "sha256": "3f21a131624639aafe93e7741ff38af17ec926a3c825273af5f22f8c4c1adfff"
+      "bytes": 9497,
+      "sha256": "4b6fe8c4bab18b6d1b365ea2f4f75386cc96e0fcf8fc2f29216d6db8ad374c07"
     },
     {
       "path": "viewer/index.html",
       "bytes": 935,
-      "sha256": "8b1cf6ede877c732efb1d07a97536a97ba87c92f0accef560e0b88cdf6e3ee8f"
+      "sha256": "35e8917ec8e9fdf595fd52427b4e12bb8eacb57c4fc992f23812436a97b3a7a1"
     }
   ],
   "last_updated": "2026-10-07",
@@ -130,5 +130,7 @@
   "repository_url": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf",
   "public_collection_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/",
   "public_viewer_url": "https://agyepes.github.io/iecon2026-six-phase-pmsm-opf/viewer/",
-  "publication_date": "2026-10-07"
+  "publication_date": "2026-10-07",
+  "previous_published_distribution_version": "1.0.0",
+  "acknowledgment": "This interactive HTML viewer was created with the help of ChatGPT (OpenAI)."
 }

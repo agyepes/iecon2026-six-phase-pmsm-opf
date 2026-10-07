@@ -1,0 +1,72 @@
+# Package metadata; the preferred-citation DOI belongs to the paper preprint.
+cff-version: 1.2.0
+message: When using this viewer, cite the associated IEEE IECON 2026 OPF paper [25] (preferred citation below)
+  and identify supplementary package version 1.0.1. Also cite [26] when discussing LUT reduction. The
+  paper DOI is not a DOI for this package.
+type: software
+title: Interactive supplementary material for the IEEE IECON 2026 open-phase-fault paper
+authors:
+- family-names: Yepes
+  given-names: Alejandro G.
+version: 1.0.1
+date-released: '2026-10-07'
+license: CC-BY-4.0
+abstract: Self-contained interactive viewer associated with the IEEE IECON 2026 OPF paper [25], using its compact-LUT
+  implementation and the supporting reduction approach of [26]. Explores sampled steady-state current
+  references, required voltages, torque, and copper losses. The adjusted NSBE-FRML mean-torque comparison
+  differs from the original paper comparison.
+keywords:
+- open-phase fault
+- six-phase PMSM
+- current references
+- torque-speed range
+- compact lookup tables
+- IEEE IECON 2026
+preferred-citation:
+  type: conference-paper
+  title: Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for
+    Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault
+  authors:
+  - family-names: Yepes
+    given-names: Alejandro G.
+  - family-names: Abdel-Azim
+    given-names: Wessam E.
+  - family-names: López
+    given-names: Oscar
+  - family-names: Karamanakos
+    given-names: Petros
+  - family-names: Abdel-Khalik
+    given-names: Ayman S.
+  - family-names: Doval-Gandoy
+    given-names: Jesús
+  collection-title: IEEE IECON 2026 – 52nd Annual Conference of the IEEE Industrial Electronics Society
+  year: 2026
+  doi: 10.48550/arXiv.2607.24633
+  url: https://arxiv.org/abs/2607.24633v3
+  notes: Associated with IEEE IECON 2026, Doha, Qatar, 18–21 October 2026. Author preprint, arXiv:2607.24633v3;
+    the DOI identifies the arXiv preprint, not an IEEE proceedings record.
+references:
+- type: conference-paper
+  title: Optimization of Current Lookup Tables for Minimum Stator Copper Loss and Torque Ripple in the
+    Full Torque-Speed Range for a Six-Phase PMSM With Nonsinusoidal Back-EMF
+  authors:
+  - family-names: Yepes
+    given-names: Alejandro G.
+  - family-names: Rahmanpour
+    given-names: Shirin
+  - family-names: López
+    given-names: Oscar
+  - family-names: Abdel-Azim
+    given-names: Wessam E.
+  - family-names: Karamanakos
+    given-names: Petros
+  - family-names: Abdel-Khalik
+    given-names: Ayman S.
+  - family-names: Doval-Gandoy
+    given-names: Jesús
+  collection-title: IEEE IECON 2026 – 52nd Annual Conference of the IEEE Industrial Electronics Society
+  year: 2026
+  doi: 10.48550/arXiv.2607.24395
+  url: https://arxiv.org/abs/2607.24395v3
+  notes: Associated with IEEE IECON 2026, Doha, Qatar, 18–21 October 2026. Author preprint, arXiv:2607.24395v3;
+    the DOI identifies the arXiv preprint, not an IEEE proceedings record.
