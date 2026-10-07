@@ -1,0 +1,38 @@
+License
+
+SPDX-License-Identifier: CC-BY-4.0
+
+The HTML viewer, embedded numerical data, and accompanying original
+documentation in this supplementary package are licensed under the
+Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt these materials under the terms of that licence,
+including appropriate credit, a link to the licence, and an indication
+of changes.
+
+Licence summary:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal text:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Suggested attribution:
+Interactive supplementary material for the IEEE IECON 2026 open-phase-fault
+paper, version 1.0.0, associated with:
+
+A. G. Yepes, W. E. Abdel-Azim, O. López, P. Karamanakos,
+A. S. Abdel-Khalik, and J. Doval-Gandoy,
+"Current References for Minimum Copper Loss and Torque Ripple in the Full
+Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal
+Back-EMF Under an Open-Phase Fault," IEEE IECON 2026.
+Author preprint DOI: 10.48550/arXiv.2607.24633.
+
+The compact LUT adapts the reduction approach of the supporting paper [26]:
+A. G. Yepes et al., "Optimization of Current Lookup Tables for Minimum
+Stator Copper Loss and Torque Ripple in the Full Torque-Speed Range for
+a Six-Phase PMSM With Nonsinusoidal Back-EMF," IEEE IECON 2026.
+Author preprint DOI: 10.48550/arXiv.2607.24395.
+
+The linked research papers are not included in this package and retain
+their own publication and reuse terms. This notice does not relicense
+those papers or imply endorsement by their publishers.

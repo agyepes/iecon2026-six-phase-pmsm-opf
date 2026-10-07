@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "collection_id": "iecon2026-opf",
+  "title": "Supplementary resources for the IEEE IECON 2026 open-phase-fault paper",
+  "primary_paper": {
+    "type": "conference-paper",
+    "title": "Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault",
+    "authors": [
+      {
+        "family-names": "Yepes",
+        "given-names": "Alejandro G."
+      },
+      {
+        "family-names": "Abdel-Azim",
+        "given-names": "Wessam E."
+      },
+      {
+        "family-names": "López",
+        "given-names": "Oscar"
+      },
+      {
+        "family-names": "Karamanakos",
+        "given-names": "Petros"
+      },
+      {
+        "family-names": "Abdel-Khalik",
+        "given-names": "Ayman S."
+      },
+      {
+        "family-names": "Doval-Gandoy",
+        "given-names": "Jesús"
+      }
+    ],
+    "collection-title": "IEEE IECON 2026 – 52nd Annual Conference of the IEEE Industrial Electronics Society",
+    "year": 2026,
+    "doi": "10.48550/arXiv.2607.24633",
+    "url": "https://arxiv.org/abs/2607.24633v3",
+    "notes": "Associated with IEEE IECON 2026, Doha, Qatar, 18–21 October 2026. Author preprint, arXiv:2607.24633v3; the DOI identifies the arXiv preprint, not an IEEE proceedings record."
+  },
+  "prepared_date": "2026-10-06",
+  "public_url": null,
+  "latest_release": "1.0.0",
+  "resources": [
+    {
+      "id": "viewer",
+      "title": "Interactive operating-point viewer",
+      "type": "html",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+      "paper": "10.48550/arXiv.2607.24633",
+      "online_entry_path": "viewer/index.html"
+    },
+    {
+      "id": "package",
+      "title": "Supplementary package",
+      "type": "zip",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip",
+      "sha256": "ce2e6c6ab5274b48e8a9826eac1d9589de6846a93aeb9e26831bd2bd6ffd0368",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "guide",
+      "title": "Viewer guide",
+      "type": "markdown",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/README.md",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "citation",
+      "title": "Citation information",
+      "type": "md",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/CITATION.md",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "citation-cff",
+      "title": "Machine-readable citation",
+      "type": "cff",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/CITATION.cff",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "licence",
+      "title": "Release licence",
+      "type": "txt",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/LICENSE.txt",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "history",
+      "title": "Change log",
+      "type": "md",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/CHANGELOG.md",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "validation",
+      "title": "Validation record",
+      "type": "md",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/VALIDATION.md",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "checksums",
+      "title": "Release file checksums",
+      "type": "txt",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/SHA256SUMS.txt",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "manifest",
+      "title": "Release manifest",
+      "type": "json",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "releases/v1.0.0/manifest.json",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "archive-checksum",
+      "title": "Archive checksum",
+      "type": "sha256",
+      "status": "available",
+      "version": "1.0.0",
+      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip.sha256",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "future-matlab",
+      "title": "matlab",
+      "status": "reserved",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "future-datasets",
+      "title": "datasets",
+      "status": "reserved",
+      "paper": "10.48550/arXiv.2607.24633"
+    },
+    {
+      "id": "future-videos",
+      "title": "videos",
+      "status": "reserved",
+      "paper": "10.48550/arXiv.2607.24633"
+    }
+  ],
+  "related_collection": {
+    "paper": "10.48550/arXiv.2607.24395",
+    "path": "lut-reduction/index.html",
+    "role": "Separate collection for the LUT-reduction paper; [26] supports the compact-LUT implementation in the OPF viewer"
+  },
+  "last_updated": "2026-10-07",
+  "online_viewer_entry": "viewer/",
+  "hosting": {
+    "provider": "GitHub Pages",
+    "publishing_source": "main branch, repository root",
+    "configured_on_github": false
+  }
+}

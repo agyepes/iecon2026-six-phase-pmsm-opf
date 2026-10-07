@@ -1,0 +1,32 @@
+Collection website licence
+
+SPDX-License-Identifier: CC-BY-4.0
+
+The original collection homepages, collection metadata and accompanying
+website documentation are licensed under the Creative Commons Attribution
+4.0 International License (CC BY 4.0).
+
+You may share and adapt these materials under the terms of that licence,
+including appropriate credit, a link to the licence and an indication
+of changes.
+
+Licence summary:
+https://creativecommons.org/licenses/by/4.0/
+
+Legal text:
+https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Suggested attribution:
+IEEE IECON 2026 supplementary collection for the open-phase-fault paper by
+Alejandro G. Yepes and co-authors, prepared 6 October 2026, associated
+with author preprint DOI 10.48550/arXiv.2607.24633.
+
+For the separate LUT-reduction collection, also identify its associated
+paper by Alejandro G. Yepes and co-authors, author preprint DOI
+10.48550/arXiv.2607.24395.
+
+The unchanged OPF supplementary release in releases/v1.0.0 and downloads
+retains the licence notice supplied in that release. Linked research
+publications retain their own publication and reuse terms and are not
+included in this website distribution. This notice does not relicense
+those publications or imply endorsement by their publishers.

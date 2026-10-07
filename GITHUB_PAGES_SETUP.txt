@@ -1,0 +1,23 @@
+GITHUB PAGES SETUP - IEEE IECON 2026 OPF RESOURCE
+
+This website is prepared locally. No public repository or website was created.
+
+One-time publisher setup:
+1. Create or select the intended public GitHub repository. The suggested name is iecon2026-six-phase-pmsm-opf.
+2. Commit the CONTENTS of this collection folder at the repository root, including index.html, viewer/, releases/, downloads/, and the empty .nojekyll file. Uploading only the ZIP will not create a working site.
+3. In repository Settings > Pages, select Deploy from a branch, then main and /(root), and save. Use the actual branch name if it differs from main.
+4. Wait for the Pages deployment to finish. Use the website address displayed in Settings > Pages.
+5. Check the homepage and its Run interactive viewer button. Also check the short /viewer/ address. The viewer should open and finish its operating-point calculation.
+6. Put the VERIFIED direct viewer URL at the top of the repository README and in the repository About website field. Keep the collection homepage link nearby for the paper, downloads and future resources. Update the prepared publication drafts and metadata with these verified links.
+
+Reader experience:
+Open the public viewer link, or click Run interactive viewer on the collection homepage. The HTML and calculations run in the browser; extracting a ZIP is optional for offline use.
+
+Default short URL pattern (illustrative placeholders, not an assigned URL):
+https://<owner>.github.io/<repository>/viewer/
+
+The short entry points to the unchanged version 1.0.0 HTML. For future releases, update viewer/index.html to the newly selected version while preserving earlier release folders.
+
+GitHub documentation:
+https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site

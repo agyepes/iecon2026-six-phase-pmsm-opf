@@ -1,0 +1,130 @@
+{
+  "schema_version": "1.0",
+  "distribution_id": "iecon2026-supplementary-collections",
+  "distribution_version": "1.0.0",
+  "prepared_date": "2026-10-06",
+  "publicly_published": false,
+  "primary_collection": "index.html",
+  "primary_paper_preprint_doi": "10.48550/arXiv.2607.24633",
+  "separate_collection": "lut-reduction/index.html",
+  "separate_paper_preprint_doi": "10.48550/arXiv.2607.24395",
+  "included_opf_release": "1.0.0",
+  "website_licence": "CC-BY-4.0",
+  "integrity_note": "This manifest excludes itself and SHA256SUMS.txt; the checksum list covers this manifest and all other files except the list itself.",
+  "files": [
+    {
+      "path": ".nojekyll",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "collection.json",
+      "bytes": 5218,
+      "sha256": "3592696655d0f77418b910b40bb8a527f191733a89002d4bf03bb513a1de4925"
+    },
+    {
+      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip",
+      "bytes": 635185,
+      "sha256": "ce2e6c6ab5274b48e8a9826eac1d9589de6846a93aeb9e26831bd2bd6ffd0368"
+    },
+    {
+      "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip.sha256",
+      "bytes": 105,
+      "sha256": "7b3474e565aec4b1b39f98a54df77e376c9f332d37a67fcabf826020e20137c4"
+    },
+    {
+      "path": "GITHUB_PAGES_SETUP.txt",
+      "bytes": 1928,
+      "sha256": "ce2ac507ce4cfb9ae9833b82ec2fb636acf346a738348d15b3368b31907880a4"
+    },
+    {
+      "path": "index.html",
+      "bytes": 18632,
+      "sha256": "bbdf4a00a62785148bd3337cfc91721fc6a8c20d9a10c76b600f6d6ab744397b"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1268,
+      "sha256": "3cd74ba78434a92a4ae5f13716512f2f215a876798e0b820cc13bcc529c123fd"
+    },
+    {
+      "path": "lut-reduction/CITATION.md",
+      "bytes": 796,
+      "sha256": "e543a51ddf9332a9e46c25c1cc73900850c35a03338cd6da4155fff7922daaf5"
+    },
+    {
+      "path": "lut-reduction/collection.json",
+      "bytes": 2469,
+      "sha256": "b85104875e705c79fd37d12eefae3e9f9fa73fcc3e446a1727c2d4c3169cfb62"
+    },
+    {
+      "path": "lut-reduction/index.html",
+      "bytes": 14436,
+      "sha256": "3607ffbcc2044bfcaca5766a7571e0b488bc07f73aa7f3c80835a41a121601d7"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6281,
+      "sha256": "bdfd110689cccc20d004637200bb857b87b3b737e08cbad6d21a96896d7d0730"
+    },
+    {
+      "path": "releases/v1.0.0/CHANGELOG.md",
+      "bytes": 1889,
+      "sha256": "080d4c00567746ac6e6560663fee2d6d209d7113ef14f20a88877982c794bb21"
+    },
+    {
+      "path": "releases/v1.0.0/CITATION.cff",
+      "bytes": 3022,
+      "sha256": "590023e2d45a138cc3cebdfeb00366466a28732a6e421d8f40d9006a0508d3e6"
+    },
+    {
+      "path": "releases/v1.0.0/CITATION.md",
+      "bytes": 2696,
+      "sha256": "64d9ea955838c1a191c7bdd2a593dadf6b10dbd027642f4255fc581c0cdeb26b"
+    },
+    {
+      "path": "releases/v1.0.0/IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+      "bytes": 984880,
+      "sha256": "ae91320aa33f502f7baf23d317fd1a4704400e045c18b5e5f292caf49f27b6b9"
+    },
+    {
+      "path": "releases/v1.0.0/LICENSE.txt",
+      "bytes": 1552,
+      "sha256": "46f75a6485648fb62bb50867c646a76c75831d914f46a131c55bbc2cc3ceab9e"
+    },
+    {
+      "path": "releases/v1.0.0/manifest.json",
+      "bytes": 3262,
+      "sha256": "4c282360f9c06e2df2cbb8a258709de201ce9c923b0ea417e0e0bf67f3476eb8"
+    },
+    {
+      "path": "releases/v1.0.0/README.md",
+      "bytes": 10852,
+      "sha256": "868279bac5cc28eef239eb59aeaa2849717f101bf6d24975aa356c0cac4eda9f"
+    },
+    {
+      "path": "releases/v1.0.0/SHA256SUMS.txt",
+      "bytes": 678,
+      "sha256": "f98413f6441b033e7b9553600933ab294e6b895460b45a81ea384648de17eabe"
+    },
+    {
+      "path": "releases/v1.0.0/VALIDATION.md",
+      "bytes": 4563,
+      "sha256": "14f6db3174ba50b4cc10b5e9e797bad68bc3875d5b9708078fb98bdf3b426d01"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 6756,
+      "sha256": "fe20a2c91c2f63adfc83319a65139c6283635950c2b48c7dfc3fe6654de29632"
+    },
+    {
+      "path": "viewer/index.html",
+      "bytes": 935,
+      "sha256": "8b1cf6ede877c732efb1d07a97536a97ba87c92f0accef560e0b88cdf6e3ee8f"
+    }
+  ],
+  "last_updated": "2026-10-07",
+  "online_viewer_entry": "viewer/",
+  "hosting_prepared_for": "GitHub Pages static branch deployment",
+  "github_pages_configured": false
+}

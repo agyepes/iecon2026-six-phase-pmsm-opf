@@ -1,0 +1,69 @@
+{
+  "schema_version": "1.0",
+  "package_title": "Interactive supplementary material for the IEEE IECON 2026 open-phase-fault paper",
+  "package_version": "1.0.0",
+  "prepared_date": "2026-10-06",
+  "license": "CC-BY-4.0",
+  "viewer_file": "IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+  "html_internal_model_version": "1.4-nsbe-mean-matched-290v-boundaries",
+  "primary_paper": {
+    "viewer_reference_number": 25,
+    "title": "Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault",
+    "author_preprint_doi": "10.48550/arXiv.2607.24633",
+    "author_preprint_url": "https://arxiv.org/abs/2607.24633v3",
+    "association": "Primary IEEE IECON 2026 open-phase-fault paper"
+  },
+  "supporting_paper": {
+    "viewer_reference_number": 26,
+    "title": "Optimization of Current Lookup Tables for Minimum Stator Copper Loss and Torque Ripple in the Full Torque-Speed Range for a Six-Phase PMSM With Nonsinusoidal Back-EMF",
+    "author_preprint_doi": "10.48550/arXiv.2607.24395",
+    "author_preprint_url": "https://arxiv.org/abs/2607.24395v3",
+    "role": "LUT-reduction approach evaluated only through the compact-LUT implementation adapted to the OPF data of [25]"
+  },
+  "html_provenance": {
+    "before_glossary_edit_sha256": "dd8634eb3bf95af7fa2f2be66aef86a73b1a08952f5d1a87322af641846772e4",
+    "packaged_html_sha256": "ae91320aa33f502f7baf23d317fd1a4704400e045c18b5e5f292caf49f27b6b9",
+    "presentation_change": "Removed separate feasibility-label glossary; preserved table footnote and moved its detailed-check link into that footnote. Updated the paper references and related venue text to IEEE IECON 2026 before publication on 7 October 2026.",
+    "calculation_scripts_and_embedded_data_unchanged": true,
+    "before_ieee_venue_wording_sha256": "c8400877654d51c73e783690822287ddece2f8ca12730130d65b0cbf14faaa0f"
+  },
+  "checksum_scope": "The files array covers all payload files. SHA256SUMS.txt additionally covers manifest.json. Neither checksum file includes its own checksum.",
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1889,
+      "sha256": "080d4c00567746ac6e6560663fee2d6d209d7113ef14f20a88877982c794bb21"
+    },
+    {
+      "path": "CITATION.cff",
+      "bytes": 3022,
+      "sha256": "590023e2d45a138cc3cebdfeb00366466a28732a6e421d8f40d9006a0508d3e6"
+    },
+    {
+      "path": "CITATION.md",
+      "bytes": 2696,
+      "sha256": "64d9ea955838c1a191c7bdd2a593dadf6b10dbd027642f4255fc581c0cdeb26b"
+    },
+    {
+      "path": "IECON2026_OPF_Comparison_NSBE_MeanTorque_290V_Boundaries.html",
+      "bytes": 984880,
+      "sha256": "ae91320aa33f502f7baf23d317fd1a4704400e045c18b5e5f292caf49f27b6b9"
+    },
+    {
+      "path": "LICENSE.txt",
+      "bytes": 1552,
+      "sha256": "46f75a6485648fb62bb50867c646a76c75831d914f46a131c55bbc2cc3ceab9e"
+    },
+    {
+      "path": "README.md",
+      "bytes": 10852,
+      "sha256": "868279bac5cc28eef239eb59aeaa2849717f101bf6d24975aa356c0cac4eda9f"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 4563,
+      "sha256": "14f6db3174ba50b4cc10b5e9e797bad68bc3875d5b9708078fb98bdf3b426d01"
+    }
+  ],
+  "last_updated": "2026-10-07"
+}

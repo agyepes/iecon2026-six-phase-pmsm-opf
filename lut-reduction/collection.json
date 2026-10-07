@@ -1,0 +1,86 @@
+{
+  "schema_version": "1.0",
+  "collection_id": "iecon2026-lut-reduction",
+  "title": "Supplementary resources for the IEEE IECON 2026 LUT-reduction paper",
+  "primary_paper": {
+    "type": "conference-paper",
+    "title": "Optimization of Current Lookup Tables for Minimum Stator Copper Loss and Torque Ripple in the Full Torque-Speed Range for a Six-Phase PMSM With Nonsinusoidal Back-EMF",
+    "authors": [
+      {
+        "family-names": "Yepes",
+        "given-names": "Alejandro G."
+      },
+      {
+        "family-names": "Rahmanpour",
+        "given-names": "Shirin"
+      },
+      {
+        "family-names": "López",
+        "given-names": "Oscar"
+      },
+      {
+        "family-names": "Abdel-Azim",
+        "given-names": "Wessam E."
+      },
+      {
+        "family-names": "Karamanakos",
+        "given-names": "Petros"
+      },
+      {
+        "family-names": "Abdel-Khalik",
+        "given-names": "Ayman S."
+      },
+      {
+        "family-names": "Doval-Gandoy",
+        "given-names": "Jesús"
+      }
+    ],
+    "collection-title": "IEEE IECON 2026 – 52nd Annual Conference of the IEEE Industrial Electronics Society",
+    "year": 2026,
+    "doi": "10.48550/arXiv.2607.24395",
+    "url": "https://arxiv.org/abs/2607.24395v3",
+    "notes": "Associated with IEEE IECON 2026, Doha, Qatar, 18–21 October 2026. Author preprint, arXiv:2607.24395v3; the DOI identifies the arXiv preprint, not an IEEE proceedings record."
+  },
+  "prepared_date": "2026-10-06",
+  "public_url": null,
+  "latest_release": null,
+  "resources": [
+    {
+      "id": "paper",
+      "title": "Author preprint",
+      "status": "available",
+      "url": "https://arxiv.org/abs/2607.24395v3",
+      "paper": "10.48550/arXiv.2607.24395"
+    },
+    {
+      "id": "citation",
+      "title": "Citation information",
+      "status": "available",
+      "path": "CITATION.md",
+      "paper": "10.48550/arXiv.2607.24395"
+    },
+    {
+      "id": "future-matlab",
+      "title": "matlab",
+      "status": "reserved",
+      "paper": "10.48550/arXiv.2607.24395"
+    },
+    {
+      "id": "future-datasets",
+      "title": "datasets",
+      "status": "reserved",
+      "paper": "10.48550/arXiv.2607.24395"
+    },
+    {
+      "id": "future-videos",
+      "title": "videos",
+      "status": "reserved",
+      "paper": "10.48550/arXiv.2607.24395"
+    }
+  ],
+  "related_collection": {
+    "paper": "10.48550/arXiv.2607.24633",
+    "path": "../index.html"
+  },
+  "last_updated": "2026-10-07"
+}
