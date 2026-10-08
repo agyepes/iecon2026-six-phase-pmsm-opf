@@ -72,3 +72,14 @@ The new revision adds the ChatGPT assistance acknowledgment to the viewer, OPF h
 The local homepage, viewer entry, guide and downloads now resolve to version 1.0.1. Included viewer SHA-256: `3be9238b05c78287bb5d3165a08fa6ef7ea4e1594990996d6c923a9d32d736e5`. OPF ZIP SHA-256: `92ea6a4f0a3b82fdc8154f92d20d01c20ba66632e14506ac6c72ad28c42d9c75`. All viewer scripts and embedded data match version 1.0.0 byte for byte. All local HTML and Markdown links, unique HTML IDs, manifests, checksums and both new archives were checked. The archives contain only the 24 website files or the nine release files listed in their manifests.
 
 Earlier browser and hosting checks above describe their stated earlier versions. They were not repeated for this acknowledgment and documentation revision.
+
+## Published version 1.0.1 verification — 8 October 2026
+
+Version **1.0.1** is published on [GitHub](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/v1.0.1) and [Zenodo](https://zenodo.org/records/23222573). The earlier preparation entries above record their status at the stated dates; this section records the current publication status.
+
+- The GitHub and Zenodo OPF package downloads were reopened and matched the current local package byte for byte: **633,863 bytes**, SHA-256 `d800a23ec8046d7b4d943ea874fd6cbd25df88e06ebae9ac74c0a05763f02448`. Archive CRC, internal manifest sizes and SHA-256 checksums passed.
+- The live version 1.0.1 viewer and current project HTML matched the packaged viewer byte for byte: SHA-256 `3be9238b05c78287bb5d3165a08fa6ef7ea4e1594990996d6c923a9d32d736e5`. Its four script blocks were compared with version 1.0.0 and remain identical.
+- The current README package citation matches the published Zenodo title. The version DOI is `10.5281/zenodo.23222573`; the all-versions DOI is `10.5281/zenodo.23222572`. The OPF paper [25] remains the primary association, with [26] supporting the compact-LUT implementation.
+- Alejandro G. Yepes remains the resource creator. All six paper authors remain credited in the paper citation. The HTML and release README include the ChatGPT assistance acknowledgment.
+
+The earlier browser, numerical, export and offline checks retain their stated scope. This publication check adds no new physical-drive validation and makes no calculation or data changes.

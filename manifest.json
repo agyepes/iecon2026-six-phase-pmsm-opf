@@ -114,8 +114,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 9497,
-      "sha256": "4b6fe8c4bab18b6d1b365ea2f4f75386cc96e0fcf8fc2f29216d6db8ad374c07"
+      "bytes": 11043,
+      "sha256": "eb3cd478b2f22c15b4889fdb5ad3769bb6ada545114505d0f6e514086172be2e"
     },
     {
       "path": "viewer/index.html",
@@ -123,7 +123,7 @@
       "sha256": "35e8917ec8e9fdf595fd52427b4e12bb8eacb57c4fc992f23812436a97b3a7a1"
     }
   ],
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "online_viewer_entry": "viewer/",
   "hosting_prepared_for": "GitHub Pages static branch deployment",
   "github_pages_configured": true,
