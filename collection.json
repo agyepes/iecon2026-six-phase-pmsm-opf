@@ -155,10 +155,36 @@
       "paper": "10.48550/arXiv.2607.24633"
     },
     {
-      "id": "future-videos",
-      "title": "videos",
-      "status": "reserved",
-      "paper": "10.48550/arXiv.2607.24633"
+      "id": "supplementary-video-and-generation-v1.0.0",
+      "title": "Supplementary video and generation files for the IECON 2026 paper “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault”",
+      "type": "software",
+      "status": "available",
+      "version": "1.0.0",
+      "authors": [
+        {
+          "family-names": "Yepes",
+          "given-names": "Alejandro G."
+        }
+      ],
+      "path": "releases/video-v1.0.0/README.md",
+      "doi": "10.5281/zenodo.23304581",
+      "url": "https://doi.org/10.5281/zenodo.23304581",
+      "licence": "CC-BY-4.0",
+      "paper": "10.48550/arXiv.2607.24633",
+      "creation_acknowledgment": "Alejandro G. Yepes created this supplementary video and its generation resources using ChatGPT 6.1 Sol (OpenAI).",
+      "access_links": {
+        "zenodo": "https://doi.org/10.5281/zenodo.23304581",
+        "source": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/tree/video-v1.0.0/releases/video-v1.0.0",
+        "video": "https://zenodo.org/api/records/23304581/files/IECON2026_OPFa_H21_speed_ramp_video.mp4/content",
+        "youtube": null,
+        "researchgate": null
+      },
+      "numerical_qualification": "Quasi-steady references; presentation playback timing; approximately 0.139% current and 0.325% voltage continuous-angle overshoots preserved.",
+      "publication_state": "PRIVATE_ZENODO_DRAFT_RESERVED_DOI_NOT_PUBLISHED",
+      "public_download_URL_verified": true,
+      "public_source_url": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/tree/video-v1.0.0/releases/video-v1.0.0",
+      "doi_status": "PUBLISHED",
+      "publication_date": "2026-10-12"
     }
   ],
   "related_collection": {
@@ -166,7 +192,7 @@
     "path": "lut-reduction/index.html",
     "role": "Separate collection for the LUT-reduction paper; [26] supports the compact-LUT implementation in the OPF viewer"
   },
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-12",
   "online_viewer_entry": "viewer/",
   "hosting": {
     "provider": "GitHub Pages",
@@ -190,5 +216,6 @@
     "concept_doi": "10.5281/zenodo.23222572",
     "package_sha256": "d800a23ec8046d7b4d943ea874fd6cbd25df88e06ebae9ac74c0a05763f02448",
     "published_date": "2026-10-07"
-  }
+  },
+  "prepared_website_revision_state": "LOCAL_PREPUBLICATION_STAGING"
 }

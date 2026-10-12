@@ -6,6 +6,38 @@
 
 **Version 1.0.1 · 7 October 2026.** The resource accompanies the IEEE IECON 2026 open-phase-fault paper **[25]**. The online viewer and offline download use this release. [Earlier release v1.0.0](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/v1.0.0) remains available. The matching package is archived on [Zenodo](https://zenodo.org/records/23222573).
 
+## IECON 2026 supplementary video and generation files
+
+**Published 12 October 2026 · video package version 1.0.0.**
+
+- [Watch or download the MP4](https://zenodo.org/api/records/23304581/files/IECON2026_OPFa_H21_speed_ramp_video.mp4/content)
+- [Video and generation package on Zenodo](https://doi.org/10.5281/zenodo.23304581)
+- [GitHub video release](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/video-v1.0.0)
+- [MATLAB source and documentation](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/tree/video-v1.0.0/releases/video-v1.0.0)
+
+Sole resource author/creator: Alejandro G. Yepes.
+Alejandro G. Yepes created this supplementary video and its generation resources using ChatGPT 6.1 Sol (OpenAI).
+
+The video follows the original approximately 850–1500-r/min load curve with
+phase a open and zero cogging torque. It uses the full original H21 LUT,
+individual healthy-phase references and all ten healthy line voltages.
+The reconstruction is quasi-steady; playback timing is not physical
+acceleration time. Approximately 0.139% current and 0.325% voltage
+continuous-angle overshoots are preserved and documented.
+
+The complete ZIP contains the commented MATLAB entry, supporting code,
+inputs, reference video and verification records. Read the package README
+for its dependencies and rebuild instructions. Its Zenodo DOI identifies
+the exact video-and-generation release; the HTML supplement keeps its own DOI.
+
+Cite the paper when using the method. If you use or adapt the generation
+files, also cite the specific software release used.
+
+Associated research paper, all authors in order:
+
+Alejandro G. Yepes, Wessam E. Abdel-Azim, Oscar López, Petros Karamanakos, Ayman S. Abdel-Khalik, and Jesús Doval-Gandoy, “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault,” in IECON 2026 - 52nd Annual Conference of the IEEE Industrial Electronics Society, Doha, Qatar, 18-21 October 2026. Author preprint: arXiv:2607.24633v3, doi: 10.48550/arXiv.2607.24633.
+[Author preprint](https://arxiv.org/abs/2607.24633v3).
+
 ## Zenodo archive and citation
 
 | Identifier | Use |
