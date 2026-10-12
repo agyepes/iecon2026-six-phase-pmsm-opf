@@ -12,6 +12,7 @@
 
 - [Watch or download the MP4](https://zenodo.org/api/records/23304581/files/IECON2026_OPFa_H21_speed_ramp_video.mp4/content)
 - [Video and generation package on Zenodo](https://doi.org/10.5281/zenodo.23304581)
+- [Watch the video on YouTube](https://www.youtube.com/watch?v=29VXLzjwLOU)
 - [GitHub video release](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/video-v1.0.0)
 - [MATLAB source and documentation](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/tree/video-v1.0.0/releases/video-v1.0.0)
 
@@ -61,7 +62,7 @@ For the current hosting settings and maintenance instructions, see [GITHUB_PAGES
 
 To review the collection locally, extract the complete website ZIP and open **index.html** in a browser. Select **Run interactive viewer** to open the viewer. **Download package** provides the optional offline release and documentation.
 
-The homepages have no external scripts, stylesheets, fonts or images. They can be read offline. The interactive viewer requires JavaScript; its calculations also work offline. Paper and licence links need an internet connection. Local download links may open a file or prompt for a save location, depending on the browser.
+The homepages have no external scripts, stylesheets, fonts or images. They can be read offline. The interactive viewer requires JavaScript; its calculations also work offline. The embedded video streams from Zenodo. Video playback and external paper, licence, publication and download links need an internet connection. Local download links may open a file or prompt for a save location, depending on the browser.
 
 Open **lut-reduction/index.html** for the separate collection associated with the LUT-reduction paper **[26]**. It currently contains the paper citation and preprint link, with categories reserved for future supplementary files. No separate software or data release is listed there.
 

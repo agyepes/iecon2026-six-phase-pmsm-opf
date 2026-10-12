@@ -29,8 +29,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 10190,
-      "sha256": "7301be100a9bb4b5c97128bb58832fdcd5732f08f7d0b95849a73d12c90c30fb"
+      "bytes": 10357,
+      "sha256": "0a76755ea6e9858195df2e6e6a41f64c0f21fd7ccb199141e9739391e66a27ab"
     },
     {
       "path": "VALIDATION.md",
@@ -44,8 +44,8 @@
     },
     {
       "path": "collection.json",
-      "bytes": 7809,
-      "sha256": "9c67fe19124c2671e28609afef562816721054af766570281820e61d0a3d056f"
+      "bytes": 7850,
+      "sha256": "3aeaa85c3b3e8a1d3fbb679b61bea19147a942eb547c5ea4d6f1627570becd2f"
     },
     {
       "path": "downloads/IECON2026_OPF_Supplementary_v1.0.0.zip",
@@ -69,8 +69,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 21671,
-      "sha256": "2e8b2af9fe34a30ed4485839aaaa8b87dc26be35cf77d1ca1eb9e4895c8f846a"
+      "bytes": 21771,
+      "sha256": "9d4062eef4010dcd249ae89a332638df184e138d9321df8899d8882a5b457822"
     },
     {
       "path": "lut-reduction/CITATION.md",
