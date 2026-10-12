@@ -177,7 +177,7 @@
         "source": "https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/tree/video-v1.0.0/releases/video-v1.0.0",
         "video": "https://zenodo.org/api/records/23304581/files/IECON2026_OPFa_H21_speed_ramp_video.mp4/content",
         "youtube": "https://www.youtube.com/watch?v=29VXLzjwLOU",
-        "researchgate": null
+        "researchgate": "https://www.researchgate.net/publication/415580035"
       },
       "numerical_qualification": "Quasi-steady references; presentation playback timing; approximately 0.139% current and 0.325% voltage continuous-angle overshoots preserved.",
       "publication_state": "PRIVATE_ZENODO_DRAFT_RESERVED_DOI_NOT_PUBLISHED",

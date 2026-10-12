@@ -13,6 +13,7 @@
 - [Watch or download the MP4](https://zenodo.org/api/records/23304581/files/IECON2026_OPFa_H21_speed_ramp_video.mp4/content)
 - [Video and generation package on Zenodo](https://doi.org/10.5281/zenodo.23304581)
 - [Watch the video on YouTube](https://www.youtube.com/watch?v=29VXLzjwLOU)
+- [Video and generation files on ResearchGate](https://www.researchgate.net/publication/415580035)
 - [GitHub video release](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/releases/tag/video-v1.0.0)
 - [MATLAB source and documentation](https://github.com/agyepes/iecon2026-six-phase-pmsm-opf/tree/video-v1.0.0/releases/video-v1.0.0)
 
