@@ -1,0 +1,33 @@
+Supplementary video and generation files for the IECON 2026 paper “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault”
+Version 1.0.0
+Sole resource author/creator: Alejandro G. Yepes
+
+SPDX-License-Identifier: CC-BY-4.0
+
+The original video, generation code, accompanying inputs and documentation
+in this supplementary package are offered under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+You may share and adapt these materials, including for commercial purposes,
+under the terms of that licence. Give appropriate credit, link to the
+licence, and indicate changes. Do not imply endorsement.
+
+Licence summary: https://creativecommons.org/licenses/by/4.0/
+Legal text: https://creativecommons.org/licenses/by/4.0/legalcode.en
+
+Suggested resource credit:
+Alejandro G. Yepes (2026), Supplementary video and generation files for the IECON 2026 paper “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault”, version 1.0.0. CC BY 4.0.
+Video-package version DOI: https://doi.org/10.5281/zenodo.23304581
+Use this DOI to identify this version 1.0.0 video-and-generation release.
+The existing HTML DOIs identify the separate HTML resource.
+
+Research attribution:
+The method and scientific inputs are associated with the research paper:
+Alejandro G. Yepes, Wessam E. Abdel-Azim, Oscar López, Petros Karamanakos, Ayman S. Abdel-Khalik, and Jesús Doval-Gandoy, “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault,” in IECON 2026 - 52nd Annual Conference of the IEEE Industrial Electronics Society, Doha, Qatar, 18-21 October 2026. Author preprint: arXiv:2607.24633v3, doi: 10.48550/arXiv.2607.24633.
+Resource authorship does not change the paper's research authorship.
+
+Third-party software and fonts retain their own licences and are not
+distributed here. Linked research publications retain their publication
+and reuse terms. See THIRD_PARTY_NOTICES.txt in the reproduction ZIP.
+The separately published interactive HTML supplement retains its own
+licence notice; its archive is not included in this video package.

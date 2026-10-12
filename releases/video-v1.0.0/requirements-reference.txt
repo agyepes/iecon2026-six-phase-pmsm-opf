@@ -1,0 +1,7 @@
+# Reference environment: Python 3.13.3
+# Windows MATLAB, Times New Roman and FFmpeg/FFprobe are separate dependencies.
+numpy==2.4.6
+scipy==1.18.1
+matplotlib==3.11.2
+Pillow==12.3.0
+threadpoolctl==3.7.0

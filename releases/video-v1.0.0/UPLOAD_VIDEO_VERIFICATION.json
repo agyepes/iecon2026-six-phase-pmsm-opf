@@ -1,0 +1,99 @@
+{
+  "result": "PASS_UPLOAD_METADATA_REVISION_WITH_IDENTICAL_ENCODED_AND_DECODED_VIDEO",
+  "checked_utc": "2026-10-11T18:42:31.950025+00:00",
+  "scope": "Only the loose publishing MP4's title/creator/licence container tags are changed. The original reference MP4 inside the reproduction ZIP remains byte-identical and is still required by the generator.",
+  "publication_title": "Supplementary video and generation files for the IECON 2026 paper “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault”",
+  "sole_resource_creator_artist": "Alejandro G. Yepes",
+  "reference_MP4": {
+    "filename": "IECON2026_OPFa_H21_speed_ramp_video.mp4",
+    "sha256": "c38ce52ee5969572205fdf02cf70ae4ef97dc6b48a66aa012acafdcec42f11c6",
+    "bytes": 25628551,
+    "role": "Original required generator reference inside the reproduction ZIP; retain unchanged."
+  },
+  "upload_MP4": {
+    "filename": "IECON2026_OPFa_H21_speed_ramp_video.mp4",
+    "sha256": "203069495aa0d5961b2669fbdb22e6965208b3e9ba9a23b65d6a8c4307d201e4",
+    "bytes": 25628917,
+    "role": "Loose MP4 for Zenodo viewing, YouTube, LinkedIn and optional ResearchGate playback; do not replace the archived generator reference with this copy."
+  },
+  "stream_copy_without_compressed_video_reencoding": true,
+  "all_600_encoded_packet_SHA256_values_and_PTS_DTS_duration_size_flags_identical": true,
+  "all_600_decoded_RGB_frames_identical": true,
+  "decoded_frame_fingerprint_algorithm": "FFmpeg framemd5 after decoding and conversion to RGB24",
+  "codec_extradata_SHA256_unchanged": true,
+  "stream_properties_checked": [
+    "codec_name",
+    "codec_long_name",
+    "profile",
+    "codec_type",
+    "codec_tag_string",
+    "codec_tag",
+    "width",
+    "height",
+    "coded_width",
+    "coded_height",
+    "sample_aspect_ratio",
+    "display_aspect_ratio",
+    "pix_fmt",
+    "level",
+    "color_range",
+    "color_space",
+    "color_transfer",
+    "color_primaries",
+    "chroma_location",
+    "field_order",
+    "refs",
+    "is_avc",
+    "nal_length_size",
+    "r_frame_rate",
+    "avg_frame_rate",
+    "time_base",
+    "start_pts",
+    "start_time",
+    "duration_ts",
+    "duration",
+    "bit_rate",
+    "bits_per_raw_sample",
+    "nb_frames",
+    "extradata_size",
+    "extradata_hash"
+  ],
+  "stream_properties_identical": true,
+  "frames": 600,
+  "fps": 30,
+  "duration_seconds": 20,
+  "dimensions_px": [
+    2560,
+    1440
+  ],
+  "no_audio_streams": true,
+  "colour": "limited BT.709",
+  "fast_start_moov_before_mdat": true,
+  "upload_MP4_atoms": [
+    {
+      "type": "ftyp",
+      "offset": 0,
+      "bytes": 32
+    },
+    {
+      "type": "moov",
+      "offset": 32,
+      "bytes": 8722
+    },
+    {
+      "type": "free",
+      "offset": 8754,
+      "bytes": 8
+    },
+    {
+      "type": "mdat",
+      "offset": 8762,
+      "bytes": 25620155
+    }
+  ],
+  "upload_title_omits_H21": true,
+  "resource_creator_in_upload_metadata": "Alejandro G. Yepes",
+  "original_reference_movie_and_MATLAB_input_guards_unchanged": true,
+  "new_MATLAB_calculation_or_video_render_performed": false,
+  "external_publication_performed": false
+}

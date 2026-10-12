@@ -1,0 +1,19 @@
+Sole author/creator of the supplementary video and generation resource:
+Alejandro G. Yepes.
+
+Alejandro G. Yepes created this supplementary video and its generation resources using ChatGPT 6.1 Sol (OpenAI).
+This assistance acknowledgment is separate from resource authorship and from the research paper's authorship.
+
+The research method and scientific inputs are associated with the paper by
+Alejandro G. Yepes, Wessam E. Abdel-Azim, Oscar López, Petros Karamanakos,
+Ayman S. Abdel-Khalik, and Jesús Doval-Gandoy, in that original order.
+The full citation is in CITATION.txt.
+
+The associated paper acknowledges support from the Spanish State Research
+Agency (AEI), project PID2022-136908OB-I00,
+MCIN/AEI/10.13039/501100011033/FEDER-UE.
+The manuscript spells the project number PID2022-136908OBI00. The canonical
+hyphenated number above is verified in the official AEI awarded-grants listing:
+https://www.aei.gob.es/ayudas-concedidas/buscador-ayudas-concedidas?code=PID2022-136908OB-I00
+This repeats the paper's acknowledgment; it does not establish a separate
+funding award for the supplementary package.

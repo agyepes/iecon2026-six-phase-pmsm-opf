@@ -1,0 +1,74 @@
+# Specific video-and-generation release DOI.
+# The research-paper DOI is separate; resource and paper authorship remain distinct.
+# Paper references retain all six authors in the original order.
+cff-version: 1.2.0
+message: Cite the paper when using the method. If you use or adapt the generation files, also cite the
+  specific software release used.
+type: software
+title: Supplementary video and generation files for the IECON 2026 paper “Current References for Minimum
+  Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal
+  Back-EMF Under an Open-Phase Fault”
+version: 1.0.0
+doi: 10.5281/zenodo.23304581
+url: https://doi.org/10.5281/zenodo.23304581
+authors:
+- family-names: Yepes
+  given-names: Alejandro G.
+repository-code: https://github.com/agyepes/iecon2026-six-phase-pmsm-opf
+license: CC-BY-4.0
+abstract: Supplementary software and visualization material accompanying the IECON 2026 paper. A quasi-steady
+  video reconstructs stored phase-dependent current references for a symmetrical six-phase PMSM with phase
+  a open. The full H21 LUT, original trajectory and video are preserved, including approximately 0.139%
+  current and 0.325% voltage continuous-angle overshoots. Playback time is presentation timing. This resource
+  remains separate from the interactive HTML supplement.
+keywords:
+- IECON 2026
+- supplementary video
+- video generation
+- open-phase fault
+- six-phase PMSM
+- current references
+- full H21 lookup table
+references:
+- type: conference-paper
+  title: Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for
+    Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault
+  authors:
+  - family-names: Yepes
+    given-names: Alejandro G.
+  - family-names: Abdel-Azim
+    given-names: Wessam E.
+  - family-names: López
+    given-names: Oscar
+  - family-names: Karamanakos
+    given-names: Petros
+  - family-names: Abdel-Khalik
+    given-names: Ayman S.
+  - family-names: Doval-Gandoy
+    given-names: Jesús
+  collection-title: IECON 2026 - 52nd Annual Conference of the IEEE Industrial Electronics Society
+  year: 2026
+  url: https://arxiv.org/abs/2607.24633v3
+  notes: 'Doha, Qatar, 18-21 October 2026. Author preprint DOI: 10.48550/arXiv.2607.24633. IEEE proceedings
+    DOI and page range have not been verified.'
+- type: article
+  title: Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for
+    Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault
+  authors:
+  - family-names: Yepes
+    given-names: Alejandro G.
+  - family-names: Abdel-Azim
+    given-names: Wessam E.
+  - family-names: López
+    given-names: Oscar
+  - family-names: Karamanakos
+    given-names: Petros
+  - family-names: Abdel-Khalik
+    given-names: Ayman S.
+  - family-names: Doval-Gandoy
+    given-names: Jesús
+  journal: arXiv
+  year: 2026
+  doi: 10.48550/arXiv.2607.24633
+  url: https://arxiv.org/abs/2607.24633v3
+  notes: Author preprint, arXiv:2607.24633v3.

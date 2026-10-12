@@ -1,0 +1,9 @@
+Runtime dependencies are installed separately and are not bundled:
+MATLAB (MathWorks); Python; NumPy; SciPy; Matplotlib; Pillow;
+threadpoolctl; FFmpeg/FFprobe; and Times New Roman.
+
+These dependencies and the font retain their own licensing terms.
+The scientific generator requires a licensed Windows MATLAB installation.
+The package includes no MATLAB installer, font file or FFmpeg executable.
+The embedded rendering support is original package source, supplied here
+also as identical readable Python files in rendering_support/.

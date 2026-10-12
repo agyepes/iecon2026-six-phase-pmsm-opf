@@ -1,0 +1,496 @@
+{
+  "result": "PASS_COMMENT_ONLY_ANNOTATION_AND_ALL_NATIVE_CYCLES_RECHECKED",
+  "created_utc": "2026-10-11T10:52:44.242419+00:00",
+  "original_entry_sha256": "c33eb1be99ebbafc7d028a519766f7cf664611a429efd955a9f9364d964d8f7e",
+  "annotated_entry_sha256": "58bab01b32c5e91b72f923398cdd515de98f1a4733b8c4e36107052b4b5c8b3f",
+  "original_entry_bytes": 901045,
+  "annotated_entry_bytes": 919583,
+  "added_comment_lines": 254,
+  "corrected_existing_comment_lines": 4,
+  "all_added_or_replaced_lines_are_full_line_MATLAB_comments": true,
+  "undoing_only_recorded_comment_edits_recovers_original_file_byte_for_byte": true,
+  "all_original_executable_lines_and_original_line_endings_preserved": true,
+  "all_four_embedded_payloads_byte_unchanged": true,
+  "embedded_payload_sha256": {
+    "renderer": "161d849f1c950613c3980530e49e79fbd00ccf84789e3a18724e792ff28b9bd0",
+    "inspector": "23cf9745f487ad65dd400b4aa1325cd233ad2562460097e9d2c1e8d864bcc8f9",
+    "driver": "fc12c0614cd4673bcf2a90a2f472cf3d24851c0a17811019896eef607472e7c1",
+    "definition": "c80d56651f114abc77f2bd0edceaacef59f8464cf22aa6d1e7e772ac46a34804"
+  },
+  "edits": [
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 13,
+      "annotated_start_line_1based": 13,
+      "line_count": 58,
+      "text": "% PUBLIC ENTRY AND MODES\n%   report = rebuild_iecon2026_opf_video(mode, output_folder, Name, Value, ...)\n%   'check'   Recompute all 9,973 progressive rows and all 600 display cycles.\n%             Compare arrays and metrics; do not render frames or encode video.\n%   'preview' Recompute the same context and render ten selected reference\n%             frames near lookup/limit crossings, the late ramp and endpoints.\n%   'full'    Recompute all 600 cycles, render and inspect every frame, then\n%             encode and fully decode the 20 s / 30 fps / 2560 x 1440 MP4.\n%   The returned report and JSON/log files record the checks that actually ran.\n%   A preview or numerical check is not a full encoded-video verification.\n%\n% QUICK START (after extracting the complete archive)\n%   Set the MATLAB current folder to IECON2026_OPFa_H21_package, then use:\n%     out = fullfile(getenv('LOCALAPPDATA'),'IECON2026_H21_check_01');\n%     report = rebuild_iecon2026_opf_video('check',out);\n%   For rendering, also supply 'PythonExecutable' with the absolute path to\n%   the documented Python environment. FFmpeg/FFprobe can be on PATH or set\n%   through 'FFmpegExecutable' and 'FFprobeExecutable'. See README.md for the\n%   complete dependency list and full/preview examples. Use a new output folder\n%   after changing source, mode, runtime paths or StrictReference; run_binding\n%   prevents unrelated or differently configured output from being overwritten.\n%\n% REQUIRED ADJACENT INPUTS (keep their original filenames and exact bytes)\n%   LUTs_data_OPF_H21_nt250.mat       Full stored current-coefficient LUT.\n%   IECON2026_OPFa_H21_inputs.mat     Paired trajectory, normalized EMF and\n%                                   reference context/provenance structures.\n%   STEP8_Video_frame_samples.csv    The 600 original indices/metric checks.\n%   IECON2026_OPFa_H21_speed_ramp_video.mp4  Delivered reference for comparison.\n%   The MP4 is required even in 'check'. A source-only GitHub checkout lacks\n%   the large inputs: download and extract the complete reproduction archive.\n%\n% SCOPE AND NUMERICAL QUALIFICATIONS\n%   Fixed case: six phases; phase a open; one isolated neutral; five pole\n%   pairs; odd current harmonics 1,3,...,21; zero cogging torque (Tcog = 0).\n%   This file reconstructs the paper's stored reference currents. It does not\n%   solve the offline LP/QP or simulate a current controller or acceleration.\n%   The original optimization used 250 electrical angles; the displayed\n%   cycles use 16,000 angles. Peak/ripple metrics remain sampled quantities.\n%   The 600 frames follow the original sample order. Their 20 s playback is\n%   not physical trajectory time, and no physical time vector is invented.\n%   'StrictReference' defaults to true: exact reference arrays/runtime/render\n%   identities are required in the relevant mode. False keeps input hashes,\n%   model/support guards and numerical tolerances, but relaxes exact reference\n%   comparisons. It does not correct the LUT's physical constraint overshoots.\n%   A reproduction PASS is compatible with FAIL_CURRENT_AND_VOLTAGE: the\n%   separate full-path continuous-angle audit found small current/voltage\n%   excesses. No clipping, coefficient scaling or neutral projection hides\n%   them. See README.md and the included Step-5 report for the quantified audit.\n%\n% SOURCE MAP\n%   Main entry: guarded loading, trajectory selection, checks and orchestration.\n%   load_model / interpolate_coefficients / reconstruct / normalized_emf:\n%     the common scientific waveform calculation, with units and shapes below.\n%   iecon2026_opf_cycle_metrics: metrics from those exact waveform arrays.\n%   pkg_payload: frozen Python helpers and definition embedded in this file;\n%     readable matching copies are supplied under rendering_support/.\n%   SOURCE_GUIDE.md maps the files, functions, outputs and safe adaptation rules.\n%   Local functions are implementation details; call the public entry above.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 15,
+      "annotated_start_line_1based": 73,
+      "line_count": 5,
+      "text": "%% Options and package/output ownership\n% Rendering tools are explicit executable paths, not commands evaluated by a\n% shell. StrictReference controls reproduction checks; it never changes the\n% stored operating points or the waveform formula. 'check' needs only base\n% MATLAB with JVM; rendering additionally uses Windows .NET and Python.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 28,
+      "annotated_start_line_1based": 91,
+      "line_count": 3,
+      "text": "% The embedded definition fixes scientific configuration, original input\n% hashes, selected indices, reference metrics/pixels and helper identities.\n% Absolute historical paths in adjacent provenance files are not read here.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 37,
+      "annotated_start_line_1based": 103,
+      "line_count": 3,
+      "text": "% Bind each output folder to this exact entry file, mode, inputs and runtime\n% paths. Even a comments-only source revision has a different file hash and\n% must use a fresh output folder. Reuse is accepted only for the same binding.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 50,
+      "annotated_start_line_1based": 119,
+      "line_count": 4,
+      "text": "%% Rendering preflight (preview/full only)\n% Extract the embedded support only into the owned output folder. Its bytes\n% must match the embedded hashes. Preflight checks the rendering environment\n% before any expensive MATLAB cycle calculation begins.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 62,
+      "annotated_start_line_1based": 135,
+      "line_count": 6,
+      "text": "%% Load the exact scientific case and retained trajectory\n% The 1,443,053 original speed/torque samples are paired and kept in order.\n% The selected contiguous prefix is indices 1:1,314,036, ending immediately\n% before the first sample above 1500 r/min. Requested and used points are\n% identical: no speed/torque sorting, smoothing, resampling or saturation.\n% The approximately 849.87 r/min minimum is a retained original fluctuation.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 84,
+      "annotated_start_line_1based": 163,
+      "line_count": 4,
+      "text": "%% Recompute progressive traces and select displayed samples\n% Recalculate the left-column context with the SAME waveform/metric functions\n% as the right-column cycles. Stored context values are comparison references,\n% not an alternate source of live display metrics.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 91,
+      "annotated_start_line_1based": 174,
+      "line_count": 5,
+      "text": "% floor(linspace(...)+0.5) selects 600 existing samples across the retained\n% prefix; it does not generate interpolated operating points. Frame k starts\n% at (k-1)/30 s of playback. Preview frame IDs are a subset of these same 600.\n% The first displayed voltage/current excesses occur at frames 302/515;\n% these are not exact continuous-path or optimization active-set transitions.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 96,
+      "annotated_start_line_1based": 184,
+      "line_count": 3,
+      "text": "% One electrical cycle has uniform angles 2*pi/N,...,2*pi: exclude zero so\n% the periodic endpoint is counted once. Even N supports exact half-cycle\n% pairing. The renderer presents the cycle over 0-360 electrical degrees.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 109,
+      "annotated_start_line_1based": 200,
+      "line_count": 5,
+      "text": "%% Reconstruct, measure and verify the common cycles\n% W contains the actual cycle arrays; Q reduces those arrays into measurements.\n% Each cycle is checked against 17 reference scalars and seven native-array\n% SHA-256 fingerprints. A finer angular grid alone is not a continuous-angle\n% peak certificate. The separate full-path audit is not rerun by this entry.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 128,
+      "annotated_start_line_1based": 224,
+      "line_count": 4,
+      "text": "%     Send only the fields needed by the frozen renderer, without changing\n%     their numbers. Batches of at most 25 avoid keeping all full cycles in\n%     memory. Each exact transient MAT is removed only after its rendered\n%     frame and scientific/artist comparisons pass; reviewed PNGs remain.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 155,
+      "annotated_start_line_1based": 255,
+      "line_count": 5,
+      "text": "%% Write reports and verify that source inputs stayed unchanged\n% Reports distinguish numerical reproduction from physical feasibility.\n% Current/voltage overshoots are preserved; a faithful calculation therefore\n% must retain the scientific failure flag rather than infer feasibility from\n% a reproduction PASS. Only full mode encodes and checks the complete MP4.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 184,
+      "annotated_start_line_1based": 289,
+      "line_count": 6,
+      "text": "% PKG_REBUILD_PLOT_CONTEXT Regenerate the progressive traces from native cycles.\n% The 9,973 context source IDs are original trajectory samples and include\n% the endpoint. Batches of 24 preserve the verified reduction order (important\n% for bit-exact comparison). Arrays are [point, angle, phase/line]; reduction\n% over dimension 2 gives one metric per operating point. All 19 context\n% fields, including per-phase/per-line arrays, are checked after calculation.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 233,
+      "annotated_start_line_1based": 344,
+      "line_count": 6,
+      "text": "% PKG_METRIC_COMPARISON Check frame identity, units, metric values and extrema.\n% The 17 scalars include five separate healthy-phase RMS currents and signed\n% current/voltage excesses. Excess = measured peak minus its prescribed cap;\n% it is not a clipped or corrected value. Voltage comparisons allow 2e-8 V;\n% other scalar errors allow 2e-10 in their own units. Parseval separately checks\n% the RMS calculation without substituting its result into the display.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 253,
+      "annotated_start_line_1based": 370,
+      "line_count": 5,
+      "text": "% PKG_PYTHON Run the exact embedded driver invisibly, without a command shell.\n% 'preflight' checks dependencies; 'batch' renders/checks supplied MATLAB\n% cycles; 'encode' makes the MP4 and inspects all decoded frames. Read stdout\n% and stderr concurrently to avoid a filled pipe blocking the child process.\n% Logs remain in the owned output folder; a nonzero child exit is a failure.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 279,
+      "annotated_start_line_1based": 401,
+      "line_count": 1,
+      "text": "% Append UTF-8 diagnostic text; onCleanup closes the exact file on errors too.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 284,
+      "annotated_start_line_1based": 407,
+      "line_count": 2,
+      "text": "% Quote each Windows process argument literally. This helper is for the .NET\n% launcher, not for PowerShell/cmd; embedded quotes and newlines are rejected.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 296,
+      "annotated_start_line_1based": 421,
+      "line_count": 1,
+      "text": "% Resolve an absolute canonical path before ownership/containment comparisons.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 300,
+      "annotated_start_line_1based": 426,
+      "line_count": 2,
+      "text": "% Use a separator boundary, so a sibling with a similar prefix is not accepted.\n% Canonical Windows paths are compared without case sensitivity.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 305,
+      "annotated_start_line_1based": 433,
+      "line_count": 3,
+      "text": "% Hash the native, real double values in MATLAB column-major order a(:).\n% Little-endian ordering is enforced by the entry; dimensions are checked\n% separately. This is a scientific-array fingerprint, not a MAT-file checksum.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 310,
+      "annotated_start_line_1based": 441,
+      "line_count": 1,
+      "text": "% SHA-256 of exact bytes; Java signed-byte conversion preserves all bit values.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 316,
+      "annotated_start_line_1based": 448,
+      "line_count": 1,
+      "text": "% Stream SHA-256 in 1 MiB blocks so large LUT/movie inputs need not be buffered.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 326,
+      "annotated_start_line_1based": 459,
+      "line_count": 1,
+      "text": "% Write readable UTF-8 JSON; this function writes reports only, not inputs.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 331,
+      "annotated_start_line_1based": 465,
+      "line_count": 1,
+      "text": "% Write frozen helper bytes in binary mode to preserve their hash/line endings.\n"
+    },
+    {
+      "kind": "comment_replacement",
+      "original_line_1based": 338,
+      "annotated_start_line_1based": 473,
+      "original": "% Only input loading and this help header are adapted for relocation.\n",
+      "replacement": "% Loading uses adjacent packaged inputs; annotations explain the calculation.\n"
+    },
+    {
+      "kind": "comment_replacement",
+      "original_line_1based": 339,
+      "annotated_start_line_1based": 474,
+      "original": "% The interpolation, reconstruction and back-EMF functions are unchanged.\n",
+      "replacement": "% Interpolation, reconstruction and back-EMF executable statements are unchanged.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 341,
+      "annotated_start_line_1based": 476,
+      "line_count": 5,
+      "text": "% Private actions share one implementation: 'coefficients' selects retained\n% trajectory IDs; 'cycle' reconstructs those points; 'point' accepts explicit\n% speed/torque vectors for guarded diagnostics. The private 'load' action\n% requires both folder and embedded definition D. These local functions are\n% not standalone public scripts; use rebuild_iecon2026_opf_video to run them.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 379,
+      "annotated_start_line_1based": 519,
+      "line_count": 6,
+      "text": "% LOAD_MODEL Assemble the fixed machine, full LUT, trajectory and EMF data.\n% LUT IRe/IIm are stored as single, size [303 torque, 532 electrical frequency,\n% 6 phases, 11 odd harmonics]. They are promoted to double without modifying\n% the stored MAT. Coefficients have units A; speed is mechanical r/min; LUT\n% frequency is fundamental electrical Hz; torque is Nm; angles are radians.\n% Healthy phases b-f have independent coefficients, and phase a stays zero.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 432,
+      "annotated_start_line_1based": 578,
+      "line_count": 5,
+      "text": "% Construct the stored feasible-vertex mask using the envelope and Tau_min.\n% Some unsupported vertices contain finite zero-filled coefficients, so a\n% finite-value check alone would accept invalid interpolation support.\n% This mask checks the stored sampled optimization support; it is not a\n% continuous-angle physical-constraint certificate.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 437,
+      "annotated_start_line_1based": 588,
+      "line_count": 6,
+      "text": "% Paper VSD axis order: alpha, beta, x, y, 0+, 0-. Every resistance is 1.4 ohm;\n% L diagonal is [0.012 0.012 0.0113 0.0113 0.0094 0.0094] H. The 0+ value is\n% retained from source configuration; the paper specifies alpha-beta, x-y\n% and 0- values. The single isolated neutral suppresses the ideal 0+ current.\n% Use matrix left division to map VSD impedance back into the phase domain.\n% Keep the complete model, including the open phase, when forming voltages.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 443,
+      "annotated_start_line_1based": 600,
+      "line_count": 4,
+      "text": "% The source EMF is e'_k = e_k/omega_m in V/(mechanical rad/s), NOT voltage\n% per electrical speed. Its 126-point periodic table includes both 0 and 2*pi\n% for interp1; the reconstructed cycle itself contains only one endpoint.\n% The 250-angle fingerprint verifies the exact processing used by the LUT.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 449,
+      "annotated_start_line_1based": 610,
+      "line_count": 3,
+      "text": "% The 1e-5 A neutral guard detects inconsistent float32 coefficient data.\n% It is a residual-consistency threshold, not permission to alter currents.\n% The original small rounding residual is checked and never projected away.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 465,
+      "annotated_start_line_1based": 629,
+      "line_count": 4,
+      "text": "% INTERPOLATE_COEFFICIENTS Guarded bilinear interpolation of every phase/harmonic.\n% Accept paired vectors or broadcast one scalar; return coefficients shaped\n% [point, phase, harmonic]. Use the same weights for IRe and IIm. Never share\n% a healthy phase's coefficient vector with another phase in this fault case.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 474,
+      "annotated_start_line_1based": 642,
+      "line_count": 4,
+      "text": "% With five pole pairs, f_e = 5*n/60. Below the first retained LUT column,\n% only coefficient LOOKUP frequency is held at Faxis(1). Store factual and\n% lookup separately: EMF and inductive voltage later use the actual n.\n% This extrapolation rule is not a physical speed or torque saturation.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 484,
+      "annotated_start_line_1based": 656,
+      "line_count": 5,
+      "text": "% An envelope pass does not ensure all four interpolation vertices are valid.\n% Locate the bounding torque/frequency cell and its convex weights; inspect\n% each nonzero-weight vertex below. At an exact breakpoint, a zero-weight\n% outside vertex need not contribute, but no infeasible positive-weight\n% vertex may be used. Unsupported points fail instead of being clipped.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 514,
+      "annotated_start_line_1based": 691,
+      "line_count": 4,
+      "text": "% Express sum_k i_k in global cos(h*theta)/sin(h*theta) coefficients. For\n% each harmonic the residual amplitude is hypot(cosine,sine); summing those\n% amplitudes bounds the neutral residual for EVERY electrical angle, beyond\n% the sampled cycle. Preserve the interpolated coefficients after this check.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 525,
+      "annotated_start_line_1based": 706,
+      "line_count": 4,
+      "text": "% RECONSTRUCT Create the one common cycle at fixed speed and torque.\n% Waveforms are [point, angle, phase] or [point, angle, line]; torque is\n% [point, angle]. theta is rotor electrical angle in radians. Phase numbering\n% 1:6 is a:f and phi_k = (k-1)*pi/3, exactly as in the paper.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 532,
+      "annotated_start_line_1based": 717,
+      "line_count": 7,
+      "text": "% Paper current convention (IIm is the sine coefficient, with this sign):\n%   i_k(theta) = sum_h [IRe(k,h)*cos(h*(theta-phi_k))\n%                    + IIm(k,h)*sin(h*(theta-phi_k))], h = 1,3,...,21.\n% Differentiate the harmonic series analytically in electrical angle; this\n% avoids finite-difference errors in inductive voltage. At fixed operating\n% point, di/dt = omega_e*di/dtheta. Derivatives of changing LUT coefficients\n% during a physical acceleration are outside this quasi-steady calculation.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 548,
+      "annotated_start_line_1based": 740,
+      "line_count": 4,
+      "text": "% Use ACTUAL mechanical speed for e_k = omega_m*e'_k, and actual electrical\n% speed omega_e = 5*omega_m for the inductive term. This remains true when\n% coefficients were looked up at the first LUT column. Phase a's induced EMF\n% is retained even though its current is exactly zero.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 551,
+      "annotated_start_line_1based": 747,
+      "line_count": 4,
+      "text": "% From the paper's D*v = R*D*i + L*d(D*i)/dt + D*e:\n%   v = Rphase*i + Lphase*(omega_e*di/dtheta) + e.\n% The common-mode voltage reference is immaterial to the constrained terminal\n% differences. G_prime then forms every healthy-terminal line voltage v'_r.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 560,
+      "annotated_start_line_1based": 760,
+      "line_count": 3,
+      "text": "% Paper nomenclature: v'_r is component r of v' = G_prime*v. In this open-phase\n% case use all ten pairs bc,bd,be,bf,cd,ce,cf,de,df,ef in that order. Opposite-\n% phase pairs alone, sufficient in the balanced healthy example, miss peaks.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 567,
+      "annotated_start_line_1based": 770,
+      "line_count": 3,
+      "text": "% Torque follows the paper's T = sum_k e'_k*i_k + Tcog. Here Tcog = 0, so\n% the normalized EMF can be used directly and the result is in Nm. Do not\n% multiply this expression by mechanical speed or the pole-pair count again.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 575,
+      "annotated_start_line_1based": 781,
+      "line_count": 4,
+      "text": "% NORMALIZED_EMF Match the LUT's periodic-linear, half-wave EMF processing.\n% Phase-shift queries with the same theta-phi_k convention as the currents.\n% Half-wave symmetry is e'(theta+pi) = -e'(theta), consistent with odd current\n% harmonics and with limiting both positive and negative waveform peaks.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 582,
+      "annotated_start_line_1based": 792,
+      "line_count": 4,
+      "text": "% For an even, half-cycle-paired grid, construct the second half as EXACTLY\n% the negative of the first: 0.5*(raw(theta)-raw(theta+pi)). For other query\n% grids evaluate the pi-shifted partner explicitly. Preserve raw and used\n% EMF separately so the processing remains observable in the waveform struct.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 594,
+      "annotated_start_line_1based": 808,
+      "line_count": 2,
+      "text": "% The private default reproduces the original 250-angle LUT convention.\n% The public entry explicitly overrides it with 16,000 angles for the video.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 598,
+      "annotated_start_line_1based": 814,
+      "line_count": 2,
+      "text": "% Indices address the original retained contiguous prefix, not a resampled\n% or sorted trajectory. Preserve the original speed/torque pairing exactly.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 609,
+      "annotated_start_line_1based": 827,
+      "line_count": 1,
+      "text": "% Reject unrelated model structs before applying this fixed-case engine.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 615,
+      "annotated_start_line_1based": 834,
+      "line_count": 2,
+      "text": "% Named scientific failures make unsupported interpolation distinguishable\n% from missing inputs and other calculation failures.\n"
+    },
+    {
+      "kind": "comment_replacement",
+      "original_line_1based": 623,
+      "annotated_start_line_1based": 844,
+      "original": "% M is loaded by iecon2026_opf_waveforms('load',video_folder).\n",
+      "replacement": "% M is assembled privately from the package folder and embedded definition D.\n"
+    },
+    {
+      "kind": "comment_replacement",
+      "original_line_1based": 624,
+      "annotated_start_line_1based": 845,
+      "original": "% W is the SAME waveform struct used by the waveform panels. For example:\n",
+      "replacement": "% W is the SAME waveform struct used by the waveform panels. Internal example:\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 712,
+      "annotated_start_line_1based": 933,
+      "line_count": 4,
+      "text": "% Mean torque = arithmetic mean of the uniform complete cycle; tau is its\n% maximum-minus-minimum torque, not RMS ripple or peak-to-mean deviation.\n% Peak current is max over angle AND healthy phase of abs(i_k). Retain the\n% phase and angle attaining each peak so plotted brackets can be checked.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 721,
+      "annotated_start_line_1based": 946,
+      "line_count": 4,
+      "text": "% Each phase gets its own RMS = sqrt(mean(i_k^2)); unbalanced b-f currents\n% cannot be represented by one shared RMS value. Physical SCL in watts is\n% Rs*sum_k RMS_k^2 (phase a contributes zero). normalized_copper_loss_A2 is\n% the current-squared quantity before multiplication by Rs, not loss in W.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 726,
+      "annotated_start_line_1based": 955,
+      "line_count": 2,
+      "text": "% v_pk = max over electrical angle and ALL TEN r of abs(v'_r). The paper's\n% v'_r labels the waveform, while v_pk labels its scalar peak measurement.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 732,
+      "annotated_start_line_1based": 963,
+      "line_count": 5,
+      "text": "% For the full odd-harmonic series, per-phase mean(i_k^2) equals\n% 0.5*sum_h(IRe_kh^2 + IIm_kh^2) on a sufficient uniform grid. This diagnostic\n% can detect inconsistent waveform/coefficient scaling or phase-RMS reductions.\n% The nt>=45 requirement prevents aliasing of squared H21 and rotating-frame\n% fundamental currents; it does not guarantee accurate continuous peaks.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 750,
+      "annotated_start_line_1based": 986,
+      "line_count": 5,
+      "text": "% Apply the documented negative-Park display convention to the complete\n% alpha/beta waveforms. In this unbalanced case, balanced single-coefficient\n% shortcuts would lose contributions from independent phases/harmonics.\n% id1_A/iq1_A are cycle means of these instantaneous vectors; the retained\n% left panels show those means even though 'cycle mean' is omitted visually.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 772,
+      "annotated_start_line_1based": 1013,
+      "line_count": 1,
+      "text": "% Keep metric-consistency errors separate from waveform/interpolation errors.\n"
+    },
+    {
+      "kind": "insertion",
+      "original_before_line_1based": 778,
+      "annotated_start_line_1based": 1020,
+      "line_count": 12,
+      "text": "% PKG_PAYLOAD Decode frozen support so the MATLAB entry remains self-contained.\n% The long strings below are BASE64 SOURCE, not numerical current/EMF data.\n% 'renderer': exact_layout.py, fixed layout/colours/fonts and artist checks.\n% 'inspector': exact_inspector.py, probe/decode/frame-order/fidelity checks.\n% 'driver': package_driver.py, preflight/render/encode orchestration.\n% 'definition': immutable scientific/runtime/input and gold-reference metadata.\n% Readable copies of the three Python sources are in rendering_support/.\n% The readable IECON2026_OPFa_H21_package.json also holds runtime_definition.\n% The entry executes THESE embedded bytes; editing a readable copy alone\n% does not change the movie. A derivative that changes a payload must also\n% update its identity and reference checks, then verify and label the result.\n% The encoded blocks are intentionally kept byte-exact for this release.\n"
+    }
+  ],
+  "documentation_revision": 1,
+  "scope": "MATLAB comments/documentation only; exact executable-source recovery plus a new 9973-row/600-cycle numerical check.",
+  "four_runtime_inputs_byte_unchanged": true,
+  "runtime_inputs": [
+    {
+      "name": "LUTs_data_OPF_H21_nt250.mat",
+      "sha256": "8fd05d1e4f4d6ff9e07c246f515e4ed08ddad8bf8b8f65ef4016b4fd8ad4c379",
+      "bytes": 97137076
+    },
+    {
+      "name": "IECON2026_OPFa_H21_inputs.mat",
+      "sha256": "109fe8afbee36bed19875c51edbf9d5e35570e2eb7cc4f74c1bdd198ff4f527d",
+      "bytes": 53747278
+    },
+    {
+      "name": "STEP8_Video_frame_samples.csv",
+      "sha256": "577f7e6f3be70c9ef4178ea0b32cd7c108c05862ccc87bd11b7d0f0b7b0a6c9d",
+      "bytes": 228491
+    },
+    {
+      "name": "IECON2026_OPFa_H21_speed_ramp_video.mp4",
+      "sha256": "c38ce52ee5969572205fdf02cf70ae4ef97dc6b48a66aa012acafdcec42f11c6",
+      "bytes": 25628551
+    }
+  ],
+  "readable_Python_support_byte_matches_embedded_support": true,
+  "fresh_annotated_entry_numerical_check": {
+    "mode": "check",
+    "started_utc": "2026-10-11T10:45:25.548813+00:00",
+    "completed_utc": "2026-10-11T10:51:39.498171+00:00",
+    "exit_code": 0,
+    "entry_sha256_at_execution": "58bab01b32c5e91b72f923398cdd515de98f1a4733b8c4e36107052b4b5c8b3f",
+    "default_MATLAB_path_restored": true,
+    "strict_reference": true,
+    "MATLAB_help_header_accessible_and_checked": true,
+    "context_rows_recalculated": 9973,
+    "context_fields_bit_exact": 19,
+    "native_cycles_recalculated": 600,
+    "angles_per_cycle": 16000,
+    "waveform_array_fingerprints_matched": 4200,
+    "metric_scalar_comparisons": 10200,
+    "maximum_metric_errors": [
+      0,
+      0,
+      1.3322676295501878e-14,
+      0,
+      0,
+      0,
+      3.1086244689504383e-15,
+      2.220446049250313e-15,
+      3.9968028886505635e-15,
+      1.3322676295501878e-15,
+      3.1086244689504383e-15,
+      4.263256414560601e-14,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "open_phase_current_exactly_zero_every_cycle": true,
+    "maximum_sampled_neutral_peak_A": 4.4867676818327595e-07,
+    "first_excluded_support_guard_passed": true,
+    "input_hashes_unchanged": true,
+    "scientific_limit_compliance": "FAIL_CURRENT_AND_VOLTAGE",
+    "fresh_render_or_encode_performed_for_comment_revision": false,
+    "fresh_continuous_angle_audit_performed": false,
+    "raw_native_report_sha256": "413ac31eda2fb19717cd5dadf0622946e36c76690e5165ce6faa9ee9f1bbc26b",
+    "raw_context_report_sha256": "1698cc630ac75078e16c05914fdb582d24262f7a1afc63d4b2c53312485c339e",
+    "raw_run_logs_and_reports": "Retained in the preparation workspace; public comparison results are summarized here."
+  },
+  "prior_full_render_decode_source_sha256": "c33eb1be99ebbafc7d028a519766f7cf664611a429efd955a9f9364d964d8f7e",
+  "prior_complete_video_render_decode_evidence_preserved": true,
+  "scientific_limit_compliance": "FAIL_CURRENT_AND_VOLTAGE",
+  "external_publication_performed": false
+}

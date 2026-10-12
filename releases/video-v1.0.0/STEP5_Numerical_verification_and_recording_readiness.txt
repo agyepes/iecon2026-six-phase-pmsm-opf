@@ -1,0 +1,271 @@
+IECON 2026 VIDEO - STEP 5: NUMERICAL VERIFICATION
+================================================
+Configuration: IECON2026_OPFa_H21_full_nt250_Tcog0
+Prepared: 2026-10-06T22:14:18+00:00
+
+RESULT
+------
+Numerical verification is complete. Continuous-angle current and voltage
+constraints FAIL for the unchanged original H21/nt250 LUT on the selected
+trajectory. Torque ripple passes. Recording readiness for a video claiming
+that all prescribed limits are met is FALSE.
+
+The files are a verified audit of the original case. No rescaling, clipping,
+new LUT, coefficient projection, modified requested point, invented time,
+video frame styling or encoded video is used to conceal the failures.
+The failures concern the supplied coefficient waveforms. They do not prove
+that the requested torque/speed points are physically infeasible or that a
+reoptimized H21 solution is impossible.
+
+1. COMPLETE SCOPE AND FRESH REPRODUCTION
+--------------------------------------
+All 1,314,036 original selected operating points are retained in their original
+sequence. Their original 250-angle cycles were recalculated in native MATLAB.
+Every one of the 40 saved Step-4 fields reproduced bitwise.
+Fresh 500- and 1000-angle cycles were then evaluated for EVERY original point.
+The common MATLAB waveform/metric functions and an independent complex-phasor
+implementation were compared on 2,937 original points at 250, 500, 1000, 2000,
+4000, 8000 and 16000 angles, and on six critical original points at 32000,
+64000, 128000 and 256000 angles. All ten healthy line voltages are evaluated, ordered:
+  bc, bd, be, bf, cd, ce, cf, de, df, ef.
+
+Increasing angle density is not used as a substitute for a peak error bound.
+The nested-grid current maximum stays apparently unchanged from 500 through
+64000 angles, yet the 128000-angle grid and independent stationary roots find
+a slightly higher peak. Voltage also has plateaus in nested-grid maxima.
+Such plateaus alone are not accepted as convergence evidence. The torque
+extrema can occur at EMF breakpoints and are enclosed explicitly.
+Every original operating point also has lower and conservative upper bounds
+on its CONTINUOUS-angle peak current, peak line voltage and torque ripple.
+The pass/fail classification is resolved for every original point; no status
+is left numerically undecided. The classifications use the unchanged physical
+limits, with no relaxed engineering tolerance added to them.
+
+2. GLOBAL CONTINUOUS-ANGLE RESULTS
+---------------------------------
+For the preserved original samples:
+  Peak current: [4.346018184232, 4.346018192883] A.
+  Excess above 4.34 A: at least 0.006018184232 A.
+  Verified lower bound at source index 1,167,001, 1424.400202 r/min,
+  T*=5.469397837447 Nm, phase d. The enclosure's peak is near 187.917188 degrees
+  electrical; half-wave symmetry produces an equivalent opposite-polarity peak.
+
+  Peak line voltage: [290.942789996125, 290.942790522166] V.
+  Excess above 290 V: at least 0.942789996125 V.
+  Verified lower bound at source index 1,162,739, 1421.999813 r/min,
+  T*=5.464193714208 Nm, pair bc. Its angle is near 238.298672 degrees electrical,
+  with an equivalent opposite-polarity peak one half-cycle away.
+
+  Torque ripple: [1.916966661023, 1.916966662228] Nm pp.
+  Minimum verified margin below 2 Nm: 0.083033337772 Nm.
+  Its global lower bound occurs at the last original point, source 1,314,036,
+  1499.999963 r/min, T*=5.634203411866 Nm.
+
+The quoted locations are actual original points furnishing the lower bounds.
+The whole-path bounds establish the maximum within their stated gaps; they
+do not assert a uniquely maximizing source index beyond numerical resolution.
+
+Straight geometric connections between consecutive original samples were
+audited too, with no assumption about physical time. Every one of the
+1,314,035 connections is enclosed: most lie inside an existing certified box;
+484 additional connections crossing box
+boundaries are checked separately and split at LUT/lookup-floor boundaries.
+For original samples plus these diagnostic connections:
+  Peak current: [4.346018190299, 4.346018192883] A.
+  Peak voltage: [290.942812409000, 290.942812504687] V.
+  Torque ripple upper bound: 1.916966662228 Nm pp.
+Diagnostic connection points do not replace any original requested/used point.
+
+3. EVERY-POINT LIMIT CLASSIFICATION
+----------------------------------
+Current <= 4.34 A: 1,127,418 pass; 186,618 fail.
+First proven continuous current exceedance: original index
+1,127,419,
+speed 1403.868649482179 r/min.
+
+Line voltage <= 290 V: 660,403 pass; 653,633 fail.
+First proven continuous voltage exceedance: original index
+658,903,
+speed 1162.377982531470 r/min.
+
+Torque ripple <= 2 Nm pp: all 1,314,036 pass.
+Unresolved numerical classifications: zero for all three limits.
+STEP5_constraint_exceedance_intervals.csv lists every contiguous proven-failure
+interval, preserving original one-based source indices and actual speeds.
+It is possible for failures to occupy several intervals; the first and last
+failure are not used as a claim that every intervening point fails.
+
+4. TORQUE TRACKING, OPEN PHASE AND NEUTRAL RESIDUAL
+-------------------------------------------------
+Maximum original 250-sample mean-torque error:
+  3.14545355983853e-07 Nm.
+Maximum continuous cycle-mean torque error:
+  2.75926422981243e-05 Nm.
+The latter is about 27.59 micro-Nm, not an exact continuous mean equality.
+The source optimization imposes the 250-sample mean. Higher-density means
+converge to the independent piecewise integral of linear EMF times H21 currents.
+Closed-form integration weights and 16-point Gauss integration on every smooth
+EMF piece differ by at most 2.22908186688766e-15.
+
+Phase-a current is exactly zero at every angle because all its coefficients
+are exactly zero. The float32 LUT has a nonzero, small neutral residual.
+For every original point and every electrical angle, the sum of phase currents
+has the independent coefficient bound
+  max bound = 5.60473794248179e-07 A
+  (about 0.5605 micro-A).
+No neutral projection is applied. Exact zero is not claimed for the stored
+float32 neutral-current sum.
+
+5. RMS AND COPPER LOSS
+---------------------
+Every healthy phase has its own RMS current. Both the 500- and 1000-angle
+waveform reductions match the per-phase H21 Parseval expressions throughout
+the full ramp. Maximum errors are:
+  RMS: 1.77635683940025e-15 A.
+  Copper loss: 4.2632564145606e-14 W.
+Copper loss remains 6.296928076991 to 53.869662919699 W.
+For equally spaced complete cycles with at least 45 samples, these quantities
+are invariant to grid density for the finite H21 currents. Peak torque/current/
+voltage are not grid-invariant. The numerical audit MAT is not a rendering
+cache; any retained d1/q1 panels must still use Q computed from their actual W.
+No extra RMS/thermal limit is inferred from the manuscript's rating sentence.
+
+6. BOUNDARY INTERPOLATION IS RESOLVED EXPLICITLY
+---------------------------------------------
+All four bounding vertices are valid on the entire selected interval,
+including inactive zero-weight vertices: 940 unique vertices. All nonzero
+weights are convex and all weights sum to one. The geometrically connected
+selected path also retains valid support and stays inside the stored envelope.
+
+The last retained point remains original index 1,314,036. The first excluded
+original point, 1,314,037, is at 1500.000466040033 r/min and
+T*=5.634205455306191 Nm. It is inside the interpolated envelope but needs an
+infeasible nonzero-weight LUT vertex. The native common engine correctly raises
+IECON2026:InterpolationSupport. No zero-filled vertex, row extension or silent
+saturation is substituted. An envelope-only test would miss this condition.
+
+Below the first retained LUT frequency, coefficients use the first column,
+whose speed is 956.399963378906 r/min. The first 259,714 selected points have
+this lookup treatment. Actual speed is retained in back-EMF and voltage;
+native low-speed checks confirm the scaling. This is a lookup convention,
+not a changed physical speed.
+
+7. WHY THE OVERSHOOTS ARE REAL
+-----------------------------
+The 250-angle original ramp has peak maxima about
+4.340000218 A and 290.000123650 V. Finer and continuously enclosed waveforms
+show the larger maxima in Section 2. They are intersample peaks of the same
+unchanged current-reference coefficients and back-EMF recipe.
+
+The support vertices themselves already show continuous-angle violations:
+168 vertices
+exceed the current limit and 579
+exceed the voltage limit. One support vertex, T*=5.7 Nm at 1500 r/min, has
+continuous torque ripple about 2.005145735 Nm, although its 250-angle ripple
+is below 2 Nm. The selected interpolated trajectory still passes ripple.
+Valid stored support is not a continuous-angle feasibility certificate.
+
+If double optimizer outputs were rounded to nearest float32 by MATLAB single(),
+the conditional maximum storage uncertainty over the support is only
+3.71671120055146e-07 A and
+1.76059600582921e-05 V.
+The original double solver outputs are unavailable, so this conditional bound
+does not assign a precise cause to every tiny 250-sample violation. It does
+show that storage quantization cannot explain the much larger dense peaks.
+
+Voltage interpolation has a separate issue: actual speed multiplies the
+derivative of interpolated current coefficients. Thus bilinear coefficients
+do not make voltage a convex interpolation of vertex voltages evaluated at
+different vertex speeds. This audit accounts for the exact quadratic-speed
+dependence using six Bernstein control waveforms per cell.
+
+At the worst original 250-angle voltage point (source index
+1,172,807, 1427.389033766698 r/min,
+T*=5.472178489238 Nm, pair ce),
+the absolute convex combination of vertex voltages at the same angle is
+290.000001146930 V.
+Actual speed coupled to the interpolated current derivative increases this
+by 0.000122503141 V,
+giving 290.000123650070 V. The exact
+decomposition agrees across all ten lines within
+9.25685851756175e-14 V.
+This identifies the interpolation contribution to that tiny sampled peak;
+it does not recover or infer the historical double optimizer outputs.
+
+The current generator source tests tau_min<=2, then sets the final QP bound
+to tau_min+0.01 without explicitly capping it at 2. A regenerated version
+should use min(tau_min+0.01,2). This is a source-code issue identified by direct
+inspection, not a claim about unavailable historical H21 solver logs.
+
+8. INDEPENDENT VERIFICATION AND CORRECTION ITERATION
+--------------------------------------------------
+All 750 piecewise-linear EMF intervals are explicitly represented. On each
+smooth interval, an absolute second-derivative bound gives a peak upper bound
+using linear-interpolation error M2*(angle interval)^2/8. Adaptive bisection
+reduces the gap. Current/torque convexity and voltage Bernstein weights extend
+the angle bounds across every original operating point.
+
+An independent stationary-root search found a bookkeeping defect in the first
+audit-bound implementation: discarded intervals still needed to contribute
+their upper bounds. The implementation was corrected, and every affected probe,
+operating-point enclosure and support-vertex enclosure was recalculated.
+Known exact sinusoidal peak regressions, all 940 dense support-vertex checks,
+independent polynomial roots for current and voltage, independent torque
+optimizations, closed-form/Gauss means and native MATLAB checks passed.
+The original common waveform engine and all earlier records were preserved.
+
+These are conservative double-precision numerical bounds with explicit
+roundoff allowances (2e-12 A, 5e-10 V and 2e-11 Nm per waveform enclosure).
+They are not a formal directed-rounding interval-arithmetic proof or a
+physical controller/thermal certificate. They establish the stated results
+for the frozen quasi-steady Tcog=0 model.
+
+9. REQUIRED SCIENTIFIC DECISION BEFORE RECORDING
+-----------------------------------------------
+For a recording that claims all prescribed limits are met, regenerate a
+separately versioned H21 LUT using adequate angle constraints or adaptive
+constraint generation. Preserve the LP-then-QP priority and physical limits;
+use an accurate mean-torque integral, double-precision neutral constraints,
+and the physical ripple cap in the final QP. Verify actual-speed interpolation,
+all ten line voltages and cell interiors, then rerun this full audit.
+Changing only the video angle density cannot repair the fixed coefficients.
+Clipping currents or rescaling requests would change the demonstrated method
+and torque tracking, so it is not an accepted correction in this record.
+
+A faithful demonstration of the original LUT can instead explicitly show the
+quantified intersample overshoots. That presentation needs an explicit choice
+and must not claim full continuous-angle limit compliance. No such choice is
+made silently in Step 5.
+
+10. SAVED FILES AND REUSE
+------------------------
+IECON2026_OPFa_H21_numerical_audit.mat - Full original sequence, actual inputs,
+  500/1000 metrics, continuous means, neutral bounds, per-point peak enclosures
+  and classifications, support bounds, Bernstein controls and exact index cover.
+IECON2026_OPFa_H21_numerical_audit.json - Scientific results and recording gate.
+IECON2026_OPFa_H21_numerical_audit.png - Scientific audit overview.
+IECON2026_OPFa_H21_numerical_reference.mat - Independent convergence references.
+IECON2026_OPFa_H21_numerical_examples.mat - Native matching W/Q examples.
+STEP5_angular_convergence.csv - Grid results with their actual point-set scope.
+STEP5_constraint_exceedance_intervals.csv - Every proven failure interval.
+verify_iecon2026_opf_numerics.m - Repeat native grid/critical-angle/boundary checks.
+verify_iecon2026_opf_continuous.py and iecon2026_opf_audit_model.py - Independently
+  rebuild conservative continuous peak bounds for every preserved original point.
+STEP5_verification.json - Saved-byte integrity and all verification evidence.
+STEP5_Numerical_verification_and_recording_readiness.txt - This readable report.
+
+Native MATLAB verification, with outputs in a new nonsynchronized folder:
+  addpath(video_folder);
+  verify_iecon2026_opf_numerics(video_folder,
+      fullfile(video_folder,'IECON2026_OPFa_H21_numerical_reference.mat'),
+      output_folder);
+Independent Python continuous-angle verification, from a terminal:
+  python verify_iecon2026_opf_continuous.py --video-folder <Video folder>
+      --output-folder <new non-OneDrive working folder>
+Verified dependencies: Python 3.13, NumPy, SciPy, threadpoolctl; MATLAB R2026a.
+A PASS from these verifiers confirms the calculations; the scientific result
+for the original case remains FAIL_CURRENT_AND_VOLTAGE.
+
+All 25 earlier Video files, 20 original sources, 20 frozen source copies and
+11 aliases are protected by SHA-256. Temporary data and computations remain:
+C:\Users\agyep\AppData\Local\CodexScratch\iecon2026-video-step5-20261006T211832Z-b99ddc59

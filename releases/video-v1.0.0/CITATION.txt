@@ -1,0 +1,34 @@
+CITATION INSTRUCTIONS
+
+Cite the paper when using the method. If you use or adapt the generation files, also cite the specific software release used.
+
+Supplementary software and visualization material accompanying the paper.
+
+VIDEO AND GENERATION PACKAGE
+
+Alejandro G. Yepes (2026), Supplementary video and generation files for the IECON 2026 paper “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault”, version 1.0.0. Zenodo. https://doi.org/10.5281/zenodo.23304581.
+
+Sole resource author/creator: Alejandro G. Yepes.
+Prepared on 11 October 2026. This video package has its own version DOI
+10.5281/zenodo.23304581. Use that identifier for this exact release.
+Copies and links on other platforms identify this same supplementary resource.
+
+ASSOCIATED RESEARCH PAPER
+
+Alejandro G. Yepes, Wessam E. Abdel-Azim, Oscar López, Petros Karamanakos, Ayman S. Abdel-Khalik, and Jesús Doval-Gandoy, “Current References for Minimum Copper Loss and Torque Ripple in the Full Torque-Speed Range for Symmetrical Six-Phase PMSMs With Nonsinusoidal Back-EMF Under an Open-Phase Fault,” in IECON 2026 - 52nd Annual Conference of the IEEE Industrial Electronics Society, Doha, Qatar, 18-21 October 2026. Author preprint: arXiv:2607.24633v3, doi: 10.48550/arXiv.2607.24633.
+
+All six paper authors are retained in their original order. The DOI above
+identifies the author preprint. An IEEE proceedings DOI and page range have
+not been verified and are not supplied.
+
+RELATED HTML SUPPLEMENT
+
+The separate HTML-only resource remains version 1.0.1, with version DOI
+10.5281/zenodo.23222573 and concept DOI 10.5281/zenodo.23222572.
+Neither identifies this video package. It is not a new version of that
+HTML resource and it does not merge its archive into this video release.
+
+ASSISTANCE
+
+See ACKNOWLEDGMENTS.txt. Assistance acknowledgments are separate from resource
+authorship and paper citations.

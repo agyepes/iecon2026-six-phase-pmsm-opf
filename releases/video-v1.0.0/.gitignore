@@ -1,0 +1,6 @@
+# Large scientific inputs and the reference video come from the archive.
+*.mat
+*.mp4
+*.zip
+__pycache__/
+.venv/

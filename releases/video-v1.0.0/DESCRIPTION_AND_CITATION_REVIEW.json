@@ -1,0 +1,133 @@
+{
+  "result": "PASS_INDEPENDENT_PUBLICATION_STEPS_6_9_DOCUMENT_AND_PROOF_AUDIT",
+  "checked_utc": "2026-10-11T23:41:35.889916+00:00",
+  "documentation_revision": 8,
+  "sole_resource_author": "Alejandro G. Yepes",
+  "all_six_paper_authors_in_order": [
+    "Alejandro G. Yepes",
+    "Wessam E. Abdel-Azim",
+    "Oscar López",
+    "Petros Karamanakos",
+    "Ayman S. Abdel-Khalik",
+    "Jesús Doval-Gandoy"
+  ],
+  "CFF_schema_and_roles_valid": true,
+  "RDM_payload_schema_and_description_HTML_valid": true,
+  "creation_acknowledgment": "Alejandro G. Yepes created this supplementary video and its generation resources using ChatGPT 6.1 Sol (OpenAI).",
+  "source_inputs_movies_and_frozen_historical_proofs_preserved": true,
+  "scientific_limit_compliance": "FAIL_CURRENT_AND_VOLTAGE",
+  "scientific_qualifications_retained": true,
+  "citation_instructions": "Cite the paper when using the method. If you use or adapt the generation files, also cite the specific software release used.",
+  "independent_audit": {
+    "checked_utc": "2026-10-11T23:35:29.090552+00:00",
+    "documentation_revision": 8,
+    "scope": "Independent audit and correction of publication steps 6-9. Reopened all numerical records and verified the byte-identity bridge to the executed revision-6 archive. Freshly compared every encoded packet and decoded RGB frame. Corrected current instructions, proof scope and GitHub staging checksums. Publishing authentication remains pending.",
+    "numerical_proof_bridge": {
+      "checked_utc": "2026-10-11T23:35:29.090515+00:00",
+      "numerical_execution_archive_documentation_revision": 6,
+      "numerical_execution_archive_sha256": "2c6935e6956ddccecf3cdc9ee993b1951223c559c098c6ed761d3c563d6fa2a8",
+      "numerical_execution_verified_utc": "2026-10-11T22:04:09.240684+00:00",
+      "numerical_result": "PASS_PACKAGED_NATIVE_CYCLE_REPRODUCTION",
+      "entry_sha256": "58bab01b32c5e91b72f923398cdd515de98f1a4733b8c4e36107052b4b5c8b3f",
+      "runtime_inputs": [
+        {
+          "name": "LUTs_data_OPF_H21_nt250.mat",
+          "sha256": "8fd05d1e4f4d6ff9e07c246f515e4ed08ddad8bf8b8f65ef4016b4fd8ad4c379",
+          "bytes": 97137076
+        },
+        {
+          "name": "IECON2026_OPFa_H21_inputs.mat",
+          "sha256": "109fe8afbee36bed19875c51edbf9d5e35570e2eb7cc4f74c1bdd198ff4f527d",
+          "bytes": 53747278
+        },
+        {
+          "name": "STEP8_Video_frame_samples.csv",
+          "sha256": "577f7e6f3be70c9ef4178ea0b32cd7c108c05862ccc87bd11b7d0f0b7b0a6c9d",
+          "bytes": 228491
+        },
+        {
+          "name": "IECON2026_OPFa_H21_speed_ramp_video.mp4",
+          "sha256": "c38ce52ee5969572205fdf02cf70ae4ef97dc6b48a66aa012acafdcec42f11c6",
+          "bytes": 25628551
+        }
+      ],
+      "all_source_and_input_bytes_match_numerically_executed_archive": true,
+      "native_records_rechecked": 600,
+      "progressive_fields_rechecked": 19,
+      "documentation_revision_8_reruns_MATLAB_or_optimizer": false,
+      "new_render_encode_or_continuous_angle_audit": false
+    },
+    "fresh_encoded_movie_check": {
+      "result": "PASS_FRESH_ALL_PACKET_AND_RGB_FRAME_IDENTITY",
+      "checked_utc": "2026-10-11T23:31:08.358918+00:00",
+      "all_600_encoded_packets_timing_sizes_flags_and_SHA256_identical": true,
+      "all_600_decoded_RGB_frames_identical": true,
+      "all_600_match_embedded_gold_frame_SHA256": true,
+      "format": {
+        "frames": 600,
+        "fps": 30,
+        "duration_seconds": 20,
+        "width": 2560,
+        "height": 1440,
+        "codec": "H264 High",
+        "pixel_format": "yuv420p",
+        "colour": "limited BT.709",
+        "audio_streams": 0
+      },
+      "upload_title_and_sole_creator_metadata_verified": true,
+      "actual_encoded_frames_for_visual_review": [
+        1,
+        302,
+        515,
+        600
+      ],
+      "new_encoding_or_scientific_rendering": false,
+      "representative_encoded_frames_visually_inspected_at_1280x720": [
+        1,
+        302,
+        515,
+        600
+      ],
+      "visual_review": "The actual decoded frames retain the requested single-line heading, italic n, thicker progressive traces, primed line-voltage notation, phase-a zero-current trace, variable limit labels and outside waveform measurements. The four inspected frames cover the start, displayed voltage/current transitions and endpoint. No image or video editing was performed."
+    },
+    "publication_authorized_by_user": true,
+    "actual_publication_performed": false,
+    "Zenodo_record_state_at_audit": "SAME_OWNED_PRIVATE_DRAFT",
+    "public_platform_receipt_kept_outside_reproduction_archive": true,
+    "GitHub_root_manifest_correction": "Checksums must cover actual staged Git blobs. Windows checkout line endings produced 15 local-versus-Git differences; no existing HTML Git blob is changed.",
+    "GitHub_shared_archive_members": 28,
+    "GitHub_distribution_only_files": [
+      ".gitattributes",
+      ".gitignore",
+      "SHA256SUMS.txt"
+    ],
+    "known_access_requirements": [
+      "Zenodo deposit:actions or authenticated publishing session and account-side integration inspection",
+      "Existing YouTube channel @alejandrogyepes; the verified IEEE Google account has no channel",
+      "Authenticated ResearchGate account and duplicate-DOI search"
+    ],
+    "numerical_gold_bridge_verification": {
+      "UTC": "2026-10-11T23:36:20.483078+00:00",
+      "all_4200_numerical_record_array_hashes_match_packaged_gold": true,
+      "all_600_frame_ids_and_original_indices_match_gold": true,
+      "actual_revision6_execution_archive_hash_verified": true,
+      "executed_archive_sha256": "2c6935e6956ddccecf3cdc9ee993b1951223c559c098c6ed761d3c563d6fa2a8"
+    },
+    "YouTube_prepared_metadata_checks": {
+      "title_characters": 85,
+      "description_UTF8_bytes": 2886,
+      "tags_characters_with_commas_and_space_quotes": 183,
+      "actual_thumbnail_dimensions": [
+        1280,
+        720
+      ],
+      "actual_thumbnail_bytes": 194059,
+      "platform_limits_verified_from_official_documentation": true,
+      "native_YouTube_CC_BY_help_currently_links_to_CC_BY_4_0": true,
+      "actual_account_upload_or_processing_not_verified": true
+    }
+  },
+  "publication_performed": false,
+  "publishing_authentication_and_Zenodo_account_integration_pending": true,
+  "full_current_platform_receipts_kept_outside_reproduction_archive": true
+}
